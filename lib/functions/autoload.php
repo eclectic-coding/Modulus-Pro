@@ -52,9 +52,9 @@ function load_nonadmin_files() {
  */
 function load_admin_files() {
 	$filenames = array(
-		'components/customizer/customizer.php',
-		'components/customizer/register-customizer.php',
-		'components/customizer/css-handler.php',
+//		'components/customizer/customizer.php',
+//		'components/customizer/register-customizer.php',
+//		'components/customizer/css-handler.php',
 		// 'components/customizer/customizer-settings-panel.php', --For Theme Settings Panel after release
 		'components/customizer/remove-adsense.php',
 

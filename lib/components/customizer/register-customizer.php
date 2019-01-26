@@ -27,7 +27,7 @@ function set_customizer_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		CHILD_TEXT_DOMAIN . '_link_color',
 		array(
-			'default'           => get_default_link_color(),
+			'default'           => __NAMESPACE__ . 'get_default_link_color',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);
@@ -48,7 +48,7 @@ function set_customizer_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		CHILD_TEXT_DOMAIN . '_accent_color',
 		array(
-			'default'           => get_default_accent_color(),
+			'default'           => __NAMESPACE__ . 'get_default_accent_color',
 			'sanitize_callback' => 'sanitize_hex_color',
 		)
 	);

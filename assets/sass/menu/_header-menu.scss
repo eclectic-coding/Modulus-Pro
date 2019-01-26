@@ -1,0 +1,22 @@
+/* ## Header Menu
+------------------------------------------------*/
+
+.nav-primary {
+  clear: left;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 100%;
+
+  @media only screen and (min-width: 960px) {
+    .nav-primary {
+      clear: none;
+      float: right;
+      width: auto;
+    }
+
+    .nav-primary .genesis-nav-menu a {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+}

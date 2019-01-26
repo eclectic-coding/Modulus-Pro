@@ -1,18 +1,21 @@
 <?php
 /**
- * Genesis Sample.
+ * Modulus.
  *
- * This file adds the landing page template to the Genesis Sample Theme.
+ * This file adds the landing page template to the Modulus Theme.
  *
  * Template Name: Landing
  *
- * @package Genesis Sample
- * @author  StudioPress
- * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @package     PolishedWP\Modulus
+ * @since       1.0.0
+ * @author      Chuck Smith
+ * @link        http://www.polishedwp.com
+ * @license     GNU General Public License 2.0+
  */
 
-add_filter( 'body_class', 'genesis_sample_add_body_class' );
+namespace PolishedWP\Modulus;
+
+add_filter( 'body_class', __NAMESPACE__ . '\add_landing_body_class' );
 /**
  * Adds landing page body class.
  *
@@ -21,7 +24,7 @@ add_filter( 'body_class', 'genesis_sample_add_body_class' );
  * @param array $classes Original body classes.
  * @return array Modified body classes.
  */
-function genesis_sample_add_body_class( $classes ) {
+function add_landing_body_class( $classes ) {
 
 	$classes[] = 'landing-page';
 	return $classes;
@@ -31,13 +34,13 @@ function genesis_sample_add_body_class( $classes ) {
 // Removes Skip Links.
 remove_action( 'genesis_before_header', 'genesis_skip_links', 5 );
 
-add_action( 'wp_enqueue_scripts', 'genesis_sample_dequeue_skip_links' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\dequeue_skip_links' );
 /**
  * Dequeues Skip Links Script.
  *
  * @since 1.0.0
  */
-function genesis_sample_dequeue_skip_links() {
+function dequeue_skip_links() {
 
 	wp_dequeue_script( 'skip-links' );
 
@@ -52,7 +55,7 @@ remove_action( 'genesis_header', 'genesis_do_header' );
 remove_action( 'genesis_header', 'genesis_header_markup_close', 15 );
 
 // Removes navigation.
-remove_theme_support( 'genesis-menus' );
+// remove_theme_support( 'genesis-menus' );
 
 // Removes breadcrumbs.
 remove_action( 'genesis_before_loop', 'genesis_do_breadcrumbs' );

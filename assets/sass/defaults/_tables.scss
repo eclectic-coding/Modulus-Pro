@@ -1,0 +1,35 @@
+/* ## Tables
+-----------------------------------------------------*/
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  line-height: 2;
+  margin-bottom: 40px;
+  width: 100%;
+  word-break: break-all;
+}
+
+tbody {
+  border-bottom: $border-width $border-style $lighter-grey;
+}
+
+td,
+th {
+  text-align: left;
+}
+
+td {
+  border-top: $border-width $border-style $lighter-grey;
+  padding: 6px;
+}
+
+th {
+  font-weight: $font-weight--regular;
+  padding: 0 6px;
+}
+
+td:first-child,
+th:first-child {
+  padding-left: 0;
+}

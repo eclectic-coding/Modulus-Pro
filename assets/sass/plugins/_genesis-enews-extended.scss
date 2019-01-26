@@ -1,0 +1,39 @@
+/* # Plugins (assets/sass/plugins/)
+=========================================================== */
+
+/* ## Genesis eNews Extended
+---------------------------------------------------- */
+
+.enews {
+  form + p {
+    margin-top: 20px;
+  }
+
+  .after-entry & {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .sidebar & {
+    background-color: $lightest-grey;
+    padding: 30px;
+  }
+
+}
+
+.enews-widget {
+  input {
+    font-size: $enews-widget__input--font-size;
+    margin-bottom: 10px;
+  }
+
+  .after-entry & input {
+    text-align: center;
+  }
+
+  input[type="submit"] {
+    margin: 0;
+    width: 100%;
+  }
+}
+

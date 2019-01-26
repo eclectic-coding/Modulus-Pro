@@ -1,0 +1,23 @@
+/* # Skip Links (assets/sass/skiplinks/)
+======================================================== */
+
+.genesis-skip-link {
+  margin: 0;
+
+  .skip-link-hidden {
+    display: none;
+    visibility: hidden;
+  }
+
+  li {
+    height: 0;
+    list-style: none;
+    width: 0;
+  }
+}
+
+/* Display outline on focus */
+:focus {
+  color: $dark-grey;
+  outline: $border-color__skip-links $border-style $border-width;
+}

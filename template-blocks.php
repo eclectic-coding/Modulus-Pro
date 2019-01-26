@@ -1,16 +1,19 @@
 <?php
 /**
- * Genesis Sample.
+ * Modulus Theme.
  *
  * A template to force full-width layout, remove breadcrumbs, and remove the page title.
  *
  * Template Name: Blocks
  *
- * @package Genesis Sample
- * @author  StudioPress
- * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @package     PolishedWP\Modulus
+ * @since       1.0.0
+ * @author      Chuck Smith
+ * @link        http://www.polishedwp.com
+ * @license     GNU General Public License 2.0+
  */
+
+namespace PolishedWP\Modulus;
 
 // Removes the entry header markup and page title.
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );
