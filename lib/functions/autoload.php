@@ -20,16 +20,15 @@ namespace PolishedWP\Modulus\Functions;
  */
 function load_nonadmin_files() {
 	$filenames = array(
-		'setup.php',
-		'admin/remove-adsense.php',
+//		'setup.php',
+		'functions/load-assets.php',
+		//'functions/load-minified-css.php',
+//		'admin/remove-adsense.php',
 //		'components/simple-social-icon-defaults.php',
-//		'components/widgets/widgets.php',
 		'components/woocommerce/woocommerce-setup.php',
 		'components/woocommerce/woocommerce-output.php',
 		'components/woocommerce/woocommerce-notice.php',
 //		'functions/formatting.php',
-		'functions/load-assets.php',
-		//'functions/load-minified-css.php',
 //		'structure/archive.php',
 		'structure/authorbox.php',
 		'structure/comments.php',
@@ -52,11 +51,12 @@ function load_nonadmin_files() {
  */
 function load_admin_files() {
 	$filenames = array(
-//		'components/customizer/customizer.php',
-//		'components/customizer/register-customizer.php',
-//		'components/customizer/css-handler.php',
+		'components/customizer/customizer.php',
+		'components/customizer/register-customizer.php',
+		'components/customizer/helper-functions.php',
+		'components/customizer/css-handler.php',
 		// 'components/customizer/customizer-settings-panel.php', --For Theme Settings Panel after release
-		'components/customizer/remove-adsense.php',
+//		'components/customizer/remove-adsense.php',
 
 	);
 

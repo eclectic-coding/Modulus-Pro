@@ -5,85 +5,64 @@
   clear: both;
   line-height: 1;
   width: 100%;
-
-  .menu-item {
-    display: block;
-    float: none;
-    position: relative;
-
-    @media only screen and (min-width: $standard-screen-width) {
-      display: inline-block;
-    }
-  }
-
-  .menu-item:focus,
-  .menu-item:hover {
-    position: relative;
-  }
-
-  a {
-    color: #333;
-    display: block;
-    font-size: $genesis-nav-menu--font-size;
-    font-weight: $font-weight--regular;
-    outline-offset: -1px;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    text-decoration: none;
-  }
-
-  a:focus,
-  a:hover {
-    color: $blue;
-    text-decoration: none;
-  }
 }
 
-.genesis-nav-menu {
-  .current-menu-item > a,
-  .sub-menu .current-menu-item > a:focus,
-  .sub-menu .current-menu-item > a:hover {
-    color: $blue;
-    text-decoration: none;
-  }
+.genesis-nav-menu .menu-item {
+  display: block;
+  float: none;
+  position: relative;
+}
 
-  .sub-menu,
-  .sub-menu a {
-    width: 100%;
-  }
+.genesis-nav-menu a {
+  color: #333;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  outline-offset: -1px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  text-decoration: none;
+}
 
-  .sub-menu {
-    clear: both;
-    display: none;
-    left: -9999px;
-    margin: 0;
-    opacity: 1;
-    padding-left: 15px;
-    position: static;
-    z-index: 99;
-  }
+.genesis-nav-menu a:focus,
+.genesis-nav-menu a:hover,
+.genesis-nav-menu .current-menu-item > a,
+.genesis-nav-menu .sub-menu .current-menu-item > a:focus,
+.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #0073e5;
+  text-decoration: none;
+}
 
-  .sub-menu a {
-    background-color: $genesis-nav-menu__sub-menu__link--background-color;
-    font-size: $genesis-nav-menu__sub-menu__link--font-size;
-    position: relative;
-    word-wrap: break-word;
-  }
+.genesis-nav-menu .sub-menu,
+.genesis-nav-menu .sub-menu a {
+  width: 100%;
+}
 
-  .menu-item:hover > .sub-menu {
-    display: block;
-    left: auto;
-    opacity: 1;
-  }
+.genesis-nav-menu .sub-menu {
+  clear: both;
+  display: none;
+  left: -9999px;
+  margin: 0;
+  opacity: 1;
+  padding-left: 15px;
+  position: static;
+  z-index: 99;
+}
 
-  .menu-item:focus,
-  .menu-item:hover {
-    position: relative;
-  }
+.genesis-nav-menu .sub-menu a {
+  background-color: #fff;
+  font-size: 14px;
+  position: relative;
+  word-wrap: break-word;
+}
 
-  .menu-item:hover > .sub-menu {
-    display: block;
-    left: auto;
-    opacity: 1;
-  }
+.genesis-nav-menu .menu-item:focus,
+.genesis-nav-menu .menu-item:hover {
+  position: relative;
+}
+
+.genesis-nav-menu .menu-item:hover > .sub-menu {
+  display: block;
+  left: auto;
+  opacity: 1;
 }

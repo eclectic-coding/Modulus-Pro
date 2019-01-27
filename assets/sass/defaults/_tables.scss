@@ -11,7 +11,7 @@ table {
 }
 
 tbody {
-  border-bottom: $border-width $border-style $lighter-grey;
+  border-bottom: 1px solid #eee;
 }
 
 td,
@@ -20,12 +20,12 @@ th {
 }
 
 td {
-  border-top: $border-width $border-style $lighter-grey;
+  border-top: 1px solid #eee;
   padding: 6px;
 }
 
 th {
-  font-weight: $font-weight--regular;
+  font-weight: 400;
   padding: 0 6px;
 }
 

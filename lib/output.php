@@ -1,34 +1,33 @@
 <?php
 /**
- * This file adds the required CSS to the front end.
+ * Genesis Sample.
  *
- * @package PolishedWP\Modulus\Customizer
- * @since       1.0.0
- * @author      Chuck Smith
- * @link        http://www.polishedwp.com
- * @license     GNU General Public License 2.0+
+ * This file adds the required CSS to the front end to the Genesis Sample Theme.
+ *
+ * @package Genesis Sample
+ * @author  StudioPress
+ * @license GPL-2.0-or-later
+ * @link    https://www.studiopress.com/
  */
 
-namespace PolishedWP\Modulus\Customizer;
-
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\handling_css' );
+add_action( 'wp_enqueue_scripts', 'genesis_sample_css' );
 /**
  * Checks the settings for the link color, and accent color.
  * If any of these value are set the appropriate CSS is output.
  *
- * @since 1.0.0
+ * @since 2.2.3
  */
-function handling_css() {
+function genesis_sample_css() {
 
 	$handle = defined( 'CHILD_THEME_NAME' ) && CHILD_THEME_NAME ? sanitize_title_with_dashes( CHILD_THEME_NAME ) : 'child-theme';
 
-	$color_link   = get_theme_mod( CHILD_TEXT_DOMAIN . '_link_color', get_default_link_color() );
-	$color_accent = get_theme_mod( CHILD_TEXT_DOMAIN . '_accent_color', get_default_accent_color() );
-	$logo         = wp_get_attachment_image_src( get_theme_mod( CHILD_TEXT_DOMAIN . '_custom_logo' ), 'full' );
+	$color_link   = get_theme_mod( 'genesis_sample_link_color', genesis_sample_customizer_get_default_link_color() );
+	$color_accent = get_theme_mod( 'genesis_sample_accent_color', genesis_sample_customizer_get_default_accent_color() );
+	$logo         = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' );
 
 	if ( $logo ) {
 		$logo_height           = absint( $logo[2] );
-		$logo_max_width        = get_theme_mod( CHILD_TEXT_DOMAIN . '_logo_width', 350 );
+		$logo_max_width        = get_theme_mod( 'genesis_sample_logo_width', 350 );
 		$logo_width            = absint( $logo[1] );
 		$logo_ratio            = $logo_width / max( $logo_height, 1 );
 		$logo_effective_height = min( $logo_width, $logo_max_width ) / max( $logo_ratio, 1 );
@@ -37,7 +36,7 @@ function handling_css() {
 
 	$css = '';
 
-	$css .= ( '\get_default_link_color' !== $color_link ) ? sprintf(
+	$css .= ( genesis_sample_customizer_get_default_link_color() !== $color_link ) ? sprintf(
 		'
 
 		a,
@@ -59,7 +58,7 @@ function handling_css() {
 		$color_link
 	) : '';
 
-	$css .= ( get_default_accent_color() !== $color_accent ) ? sprintf(
+	$css .= ( genesis_sample_customizer_get_default_accent_color() !== $color_accent ) ? sprintf(
 		'
 
 		button:focus,
@@ -83,16 +82,14 @@ function handling_css() {
 		@media only screen and (min-width: 960px) {
 			.genesis-nav-menu > .menu-highlight > a:hover,
 			.genesis-nav-menu > .menu-highlight > a:focus,
-			.genesis-nav-menu > .menu-highlight.current-menu-item > a,
-			.content .wp-block-button .wp-block-button__link:focus,
-			.content .wp-block-button .wp-block-button__link:hover {
+			.genesis-nav-menu > .menu-highlight.current-menu-item > a {
 				background-color: %1$s;
 				color: %2$s;
 			}
 		}
 		',
 		$color_accent,
-		calculates_color_contrast( $color_accent )
+		genesis_sample_color_contrast( $color_accent )
 	) : '';
 
 	$css .= ( has_custom_logo() && ( 200 <= $logo_effective_height ) ) ?

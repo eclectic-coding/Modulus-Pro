@@ -2,14 +2,14 @@
 ========================================================= */
 
 .sidebar {
-  font-size: $sidebar--font-size;
-  line-height: $line-height--medium;
+  font-size: 16px;
+  line-height: 1.5;
+}
 
-  .widget {
-    margin-bottom: 40px;
-  }
+.sidebar .widget {
+  margin-bottom: 40px;
+}
 
-  p {
-    margin-bottom: 20px;
-  }
+.sidebar p {
+  margin-bottom: 20px;
 }

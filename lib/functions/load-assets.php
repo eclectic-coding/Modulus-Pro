@@ -2,14 +2,14 @@
 /**
  * Assets load handler.
  *
- * @package     PolishedWP\PWPBase
+ * @package     PolishedWP\Modulus\
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
  * @license     GNU General Public License 2.0+
  */
 
-namespace PolishedWP\PWPBase;
+namespace PolishedWP\Modulus;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 /**
@@ -18,7 +18,6 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
  * @since 1.0.0
  */
 function enqueue_assets() {
-
 
 	wp_enqueue_style(
 		CHILD_TEXT_DOMAIN,
