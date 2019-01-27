@@ -2,17 +2,25 @@
 /**
  * Changes to the metaboxes in the admin.
  *
- * @package     ChristophHerr\Prometheus2\Admin
+ * @package     PolishedWP\Modulus\Admin
  * @since       1.0.0
- * @author      Christoph Herr
- * @link        https://www.christophherr.com
+ * @author      Chuck Smith
+ * @link        https://www.polishedwp.com
  * @license     GNU General Public License 2+
  */
 
-namespace ChristophHerr\Prometheus2\Admin;
+namespace PolishedWP\Modulus\Admin;
 
-// Removes unused admin metaboxes.
-add_action( 'genesis_theme_settings_metaboxes', function( $_genesis_admin_settings ) {
+/**
+ * Removes output of unused admin settings metaboxes.
+ *
+ * @since 1.0.0
+ *
+ * @param string $_genesis_admin_settings The admin screen to remove meta boxes from.
+ */
+function my_remove_metaboxes( $_genesis_admin_settings ) {
+
 	remove_meta_box( 'genesis-theme-settings-header', $_genesis_admin_settings, 'main' );
 	remove_meta_box( 'genesis-theme-settings-nav', $_genesis_admin_settings, 'main' );
-});
+
+}

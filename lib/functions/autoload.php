@@ -20,10 +20,11 @@ namespace PolishedWP\Modulus\Functions;
  */
 function load_nonadmin_files() {
 	$filenames = array(
-//		'setup.php',
+		'setup.php',
 		'functions/load-assets.php',
+		'/admin/metaboxes.php',
 		//'functions/load-minified-css.php',
-//		'admin/remove-adsense.php',
+		'admin/remove-adsense.php',
 //		'components/simple-social-icon-defaults.php',
 		'components/woocommerce/woocommerce-setup.php',
 		'components/woocommerce/woocommerce-output.php',
@@ -56,7 +57,7 @@ function load_admin_files() {
 		'components/customizer/helper-functions.php',
 		'components/customizer/css-handler.php',
 		// 'components/customizer/customizer-settings-panel.php', --For Theme Settings Panel after release
-//		'components/customizer/remove-adsense.php',
+		'components/customizer/remove-adsense.php',
 
 	);
 
