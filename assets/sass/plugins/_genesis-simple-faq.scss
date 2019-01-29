@@ -3,8 +3,8 @@
 
 .gs-faq__question {
 	background: transparent;
-	border-bottom: 1px solid #eee;
-	color: #333;
+	border-bottom: $border__default;
+	color: $dark-grey;
 	padding-left: 0;
 	padding-right: 0;
 }

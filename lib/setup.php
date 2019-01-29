@@ -2,14 +2,14 @@
 /**
  * Setup child theme.
  *
- * @package     PolishedWP\Modulus
+ * @package     PolishedWP\ModulusPro
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
  * @license     GNU General Public License 2.0+
  */
 
-namespace PolishedWP\Modulus;
+namespace PolishedWP\ModulusPro;
 
 // Sets up the Theme.
 require_once CHILD_THEME_DIR . '/config/theme-defaults.php';

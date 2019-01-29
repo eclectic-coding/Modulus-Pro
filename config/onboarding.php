@@ -1,20 +1,23 @@
 <?php
 /**
- * Genesis Sample.
+ * Modulus-Pro child theme..
  *
  * Onboarding config to load plugins and homepage content on theme activation.
  *
- * @package Genesis Sample
- * @author  StudioPress
- * @license GPL-2.0-or-later
- * @link    https://www.studiopress.com/
+ * @package     PolishedWP\ModulusPro\Config
+ * @since       1.0.0
+ * @author      Chuck Smith
+ * @link        http://www.polishedwp.com
+ * @license     GNU General Public License 2.0+
  */
+
+namespace PolishedWP\ModulusPro\Config;
 
 return array(
 	'dependencies' => array(
 		'plugins' => array(
 			array(
-				'name'        => __( 'Atomic Blocks', 'genesis-sample' ),
+				'name'        => __( 'Atomic Blocks', CHILD_TEXT_DOMAIN ),
 				'slug'        => 'atomic-blocks/atomicblocks.php',
 			),
 		),

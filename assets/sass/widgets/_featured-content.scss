@@ -2,7 +2,7 @@
 ------------------------------------------------- */
 
 .featured-content .entry {
-  border-bottom: 1px solid #eee;
+  border-bottom: $border__default;
   margin-bottom: 20px;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .featured-content .entry-title {
-  font-size: 16px;
+  font-size: $featured-content__entry-title--font-size;
   margin-bottom: 5px;
   margin-top: 10px;
 }

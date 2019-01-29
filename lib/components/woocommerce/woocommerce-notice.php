@@ -4,14 +4,14 @@
  *
  * This file adds the Genesis Connect for WooCommerce notice to the Genesis Sample Theme.
  *
- * @package     PolishedWP\Modulus\Woocommerce
+ * @package     PolishedWP\ModulusPro\Woocommerce
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
  * @license     GNU General Public License 2.0+
  */
 
-namespace PolishedWP\Modulus\Woocommerce;
+namespace PolishedWP\ModulusPro\Woocommerce;
 
 add_action( 'admin_print_styles', __NAMESPACE__ . '\remove_woo_notice' );
 /**
@@ -95,7 +95,7 @@ function dismiss_woocommerce_notice() {
 
 }
 
-add_action( 'admin_enqueue_scripts', 'clear_notice_script' );
+add_action( 'admin_enqueue_scripts', __NAMESPACE__ . '\clear_notice_script' );
 /**
  * Enqueues script to clear the Genesis Connect for WooCommerce plugin install prompt on dismissal.
  *

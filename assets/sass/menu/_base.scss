@@ -14,10 +14,10 @@
 }
 
 .genesis-nav-menu a {
-  color: #333;
+  color: $dark-grey;
   display: block;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: $genesis-nav-menu--font-size;
+  font-weight: $font-weight--regular;
   outline-offset: -1px;
   padding-bottom: 12px;
   padding-top: 12px;
@@ -29,7 +29,7 @@
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #0073e5;
+  color: $genesis-nav-menu--font-color-hover;
   text-decoration: none;
 }
 
@@ -50,8 +50,8 @@
 }
 
 .genesis-nav-menu .sub-menu a {
-  background-color: #fff;
-  font-size: 14px;
+  background-color: $genesis-nav-menu__sub-menu__link--background-color;
+  font-size: $genesis-nav-menu__sub-menu__link--font-size;
   position: relative;
   word-wrap: break-word;
 }

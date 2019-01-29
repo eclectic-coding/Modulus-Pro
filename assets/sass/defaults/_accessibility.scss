@@ -24,8 +24,8 @@
   clip: auto !important;
   color: #333;
   display: block;
-  font-size: 1em;
-  font-weight: 700;
+  font-size: $screen-reader__font-size;
+  font-weight: $font-weight--bold;
   height: auto;
   padding: 15px 23px 14px;
   text-decoration: none;

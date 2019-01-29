@@ -19,5 +19,5 @@
 /* Display outline on focus */
 :focus {
   color: #333;
-  outline: #ccc solid 1px;
+  outline: $border-color__skip-links $border-style $border-width;
 }

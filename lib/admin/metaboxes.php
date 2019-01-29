@@ -2,14 +2,14 @@
 /**
  * Changes to the metaboxes in the admin.
  *
- * @package     PolishedWP\Modulus\Admin
+ * @package     PolishedWP\ModulusPro\Admin
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        https://www.polishedwp.com
  * @license     GNU General Public License 2+
  */
 
-namespace PolishedWP\Modulus\Admin;
+namespace PolishedWP\ModulusPro\Admin;
 
 /**
  * Removes output of unused admin settings metaboxes.

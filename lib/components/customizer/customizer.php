@@ -2,14 +2,14 @@
 /**
  * This file makes changes to the Customizer.
  *
- * @package     PolishedWP\Modulus
+ * @package     PolishedWP\ModulusPro
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
  * @license     GNU General Public License 2.0+
  */
 
-namespace PolishedWP\Modulus\Customizer;
+namespace PolishedWP\ModulusPro\Customizer;
 
 add_filter( 'genesis_customizer_theme_settings_config', __NAMESPACE__ . '\remove_customizer_settings' );
 /**

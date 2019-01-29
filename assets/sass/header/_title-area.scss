@@ -20,15 +20,15 @@
 
 .site-title {
   font-size: 20px;
-  font-weight: 600;
-  line-height: 1;
+  font-weight: $font-weight--semibold;
+  line-height: $line-height--smaller;
   margin-bottom: 0;
 }
 
 .site-title a,
 .site-title a:focus,
 .site-title a:hover {
-  color: #333;
+  color: $dark-grey;
   text-decoration: none;
 }
 

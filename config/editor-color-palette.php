@@ -1,28 +1,32 @@
 <?php
 /**
- * Genesis Sample child theme.
+ * Modulus-Pro child theme.
  *
- * @author  StudioPress
- * @license GPL-2.0-or-later
- * @link    https://my.studiopress.com/themes/genesis-sample/
+ * @package     PolishedWP\ModulusPro\Config
+ * @since       1.0.0
+ * @author      Chuck Smith
+ * @link        http://www.polishedwp.com
+ * @license     GNU General Public License 2.0+
  */
+
+namespace PolishedWP\ModulusPro\Config;
 
 /**
  * Editor color palette config.
  */
 return array(
 	array(
-		'name'  => __( 'Light gray', 'genesis-sample' ),
+		'name'  => __( 'Light gray', CHILD_TEXT_DOMAIN ),
 		'slug'  => 'light-gray',
 		'color' => '#f5f5f5',
 	),
 	array(
-		'name'  => __( 'Medium gray', 'genesis-sample' ),
+		'name'  => __( 'Medium gray', CHILD_TEXT_DOMAIN ),
 		'slug'  => 'medium-gray',
 		'color' => '#999',
 	),
 	array(
-		'name'  => __( 'Dark gray', 'genesis-sample' ),
+		'name'  => __( 'Dark gray', CHILD_TEXT_DOMAIN ),
 		'slug'  => 'dark-gray',
 		'color' => '#333',
 	),

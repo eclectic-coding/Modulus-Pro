@@ -4,14 +4,14 @@
  *
  * This file adds the required WooCommerce setup functions.
  *
- * @package     PolishedWP\Modulus\Woocommerce
+ * @package     PolishedWP\ModulusPro\Woocommerce
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
  * @license     GNU General Public License 2.0+
  */
 
-namespace PolishedWP\Modulus\Woocommerce;
+namespace PolishedWP\ModulusPro\Woocommerce;
 
 add_filter( 'woocommerce_enqueue_styles', __NAMESPACE__ . '\set_woo_styles' );
 /**

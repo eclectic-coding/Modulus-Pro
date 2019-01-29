@@ -2,14 +2,14 @@
 /**
  * Gutenberg theme support.
  *
- * @package     PolishedWP\Modulus\Gutenberg
+ * @package     PolishedWP\ModulusPro\Gutenberg
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
  * @license     GNU General Public License 2.0+
  */
 
-namespace PolishedWP\Modulus\Gutenberg;
+namespace PolishedWP\ModulusPro\Gutenberg;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_gut_frontend_styles' );
 /**

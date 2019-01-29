@@ -6,14 +6,14 @@
  *
  * Template Name: Blocks
  *
- * @package     PolishedWP\Modulus
+ * @package     PolishedWP\ModulusPro
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
  * @license     GNU General Public License 2.0+
  */
 
-namespace PolishedWP\Modulus;
+namespace PolishedWP\ModulusPro;
 
 // Removes the entry header markup and page title.
 remove_action( 'genesis_entry_header', 'genesis_entry_header_markup_open', 5 );

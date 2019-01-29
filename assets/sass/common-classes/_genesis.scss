@@ -12,8 +12,8 @@
 }
 
 .breadcrumb {
-  border-bottom: $border-width $border-style $lighter-grey;
-  font-size: 16px;
+  border-bottom: $border__default;
+  font-size: $breadcrumb--font-size;
   margin-bottom: 40px;
   padding-bottom: 10px;
 }

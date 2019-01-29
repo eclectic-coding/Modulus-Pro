@@ -2,8 +2,8 @@
 ========================================================= */
 
 .footer-widgets {
-  border-top: 1px solid #eee;
-  background-color: #fff;
+  border-top: $border__default;
+  background-color: $footer-widgets--background-color;
   clear: both;
   padding: 60px 0;
 }

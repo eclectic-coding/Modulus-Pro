@@ -1,8 +1,8 @@
 /*!
-Theme Name: Modulus
+Theme Name: Modulus Pro
 Theme URI: https://polishedwp.com/
 
-Description: This is the Modulus Theme.
+Description: This is the Modulus Pro Theme.
 Author: Chuck Smith
 Author URI: https://polishedwp.com/
 Version: 1.0.0
@@ -11,7 +11,7 @@ Template: genesis
 
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: modulus
+Text Domain: modulus-pro
 *!/
 
 /* Table of Contents
@@ -74,8 +74,6 @@ Text Domain: modulus
 */
 
 @import "utilities/index";
-//@import "utilities/animate/index";
-//@import "utilities/mixins/index";
 @import "resets/index";
 @import "defaults/index";
 @import "structure/index";
