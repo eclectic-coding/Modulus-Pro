@@ -1,0 +1,41 @@
+/* ## Titles
+-------------------------------------------------- */
+
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+  font-size: 20px;
+  font-weight: $font-weight--semibold;
+  margin-bottom: 10px;
+}
+
+.entry-title {
+  font-size: $entry-title--font-size;
+  margin-bottom: 10px;
+
+  a {
+    color: $dark-grey;
+    text-decoration: none;
+  }
+
+  a:focus,
+  a:hover {
+    color: #0073e5;
+  }
+}
+
+.sidebar .widget-title a {
+  color: $dark-grey;
+  text-decoration: none;
+}
+
+.entry-title a:focus,
+.entry-title a:hover {
+  color: #0073e5;
+}
+
+.widget-title {
+  font-size: $widget-title--font-size;
+  font-weight: $font-weight--semibold;
+  margin-bottom: 20px;
+}

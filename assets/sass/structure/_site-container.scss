@@ -1,0 +1,22 @@
+/* # Structure (assets/sass/structure/)
+========================================================= */
+
+/* ## Site Container
+------------------------------------------------- */
+
+.site-container {
+  animation: fadein 1s;
+  word-wrap: break-word;
+}
+
+@keyframes fadein {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
