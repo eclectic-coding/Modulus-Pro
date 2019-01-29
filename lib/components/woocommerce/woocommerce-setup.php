@@ -27,7 +27,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\products_match_height', 99 )
 /**
  * Prints an inline script to the footer to keep products the same height.
  *
- * @since 2.3.0
+ * @since 1.0.0
  */
 function products_match_height() {
 
@@ -54,7 +54,7 @@ add_filter( 'woocommerce_style_smallscreen_breakpoint', __NAMESPACE__ . '\set_wo
 /**
  * Modifies the WooCommerce breakpoints.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @return string Pixel width of the theme's breakpoint.
  */
@@ -80,7 +80,7 @@ add_filter( 'genesiswooc_products_per_page', __NAMESPACE__ . '\default_products_
 /**
  * Sets the default products per page.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @return int Number of products to show per page.
  */
@@ -95,14 +95,14 @@ add_filter( 'woocommerce_pagination_args', __NAMESPACE__ . '\set_woo_pagination'
  * Updates the next and previous arrows to the default Genesis style.
  *
  * @param array $args The previous and next text arguments.
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @return array New next and previous text arguments.
  */
 function set_woo_pagination( $args ) {
 
-	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', 'genesis-sample' ) );
-	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', 'genesis-sample' ) );
+	$args['prev_text'] = sprintf( '&laquo; %s', __( 'Previous Page', CHILD_TEXT_DOMAIN ) );
+	$args['next_text'] = sprintf( '%s &raquo;', __( 'Next Page', CHILD_TEXT_DOMAIN ) );
 
 	return $args;
 
@@ -112,7 +112,7 @@ add_action( 'after_switch_theme', __NAMESPACE__ . '\set_image_dimensions_after_t
 /**
  * Defines WooCommerce image sizes on theme activation.
  *
- * @since 2.3.0
+ * @since 1.0.0
  */
 function set_image_dimensions_after_theme_setup() {
 
@@ -131,7 +131,7 @@ add_action( 'activated_plugin', __NAMESPACE__ . '\image_dimensions_after_woo_act
 /**
  * Defines the WooCommerce image sizes on WooCommerce activation.
  *
- * @since 2.3.0
+ * @since 1.0.0
  *
  * @param string $plugin The path of the plugin being activated.
  */
@@ -149,7 +149,7 @@ function image_dimensions_after_woo_activation( $plugin ) {
 /**
  * Updates WooCommerce image dimensions.
  *
- * @since 2.3.0
+ * @since 1.0.0
  */
 function update_woo_image_dimensions() {
 

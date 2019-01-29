@@ -4,7 +4,7 @@
  *
  * This file adds the required WooCommerce setup functions.
  *
- * @package     PolishedWP\Modulus
+ * @package     PolishedWP\Modulus\Woocommerce
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
@@ -25,7 +25,7 @@ add_filter( 'woocommerce_enqueue_styles', __NAMESPACE__ . '\set_woo_styles' );
 function set_woo_styles( $enqueue_styles ) {
 
 	$enqueue_styles['genesis-sample-woocommerce-styles'] = array(
-		'src'     => CHILD_THEME_URL . '/lib/components/woocommerce/genesis-sample-woocommerce.css',
+		'src'     => CHILD_THEME_URL . '/lib/components/woocommerce/theme-woocommerce.css',
 		'deps'    => '',
 		'version' => CHILD_THEME_VERSION,
 		'media'   => 'screen',
@@ -50,8 +50,8 @@ function append_custom_css_woo_css() {
 		return;
 	}
 
-	$color_link   = get_theme_mod( 'genesis_sample_link_color', get_default_link_color() );
-	$color_accent = get_theme_mod( 'genesis_sample_accent_color', get_default_accent_color() );
+	$color_link   = get_theme_mod( CHILD_TEXT_DOMAIN . '_link_color', get_default_link_color() );
+	$color_accent = get_theme_mod( CHILD_TEXT_DOMAIN . '_accent_color', get_default_accent_color() );
 
 	$woo_css = '';
 
