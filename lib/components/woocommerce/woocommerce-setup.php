@@ -38,7 +38,7 @@ function products_match_height() {
 
 	wp_enqueue_script(
 		'genesis-sample-match-height',
-		get_stylesheet_directory_uri() . '/js/jquery.matchHeight.min.js',
+		get_stylesheet_directory_uri() . '/assets/js/jquery.matchHeight.min.js',
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true

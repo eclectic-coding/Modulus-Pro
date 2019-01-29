@@ -31,7 +31,7 @@ function enqueue_assets() {
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN . '-responsive-menu',
-		get_stylesheet_directory_uri() . "/js/responsive-menus{$suffix}.js",
+		CHILD_THEME_DIR . "/assets/js/responsive-menus{$suffix}.js",
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
@@ -45,7 +45,7 @@ function enqueue_assets() {
 
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN,
-		get_stylesheet_directory_uri() . '/js/genesis-sample.js',
+		CHILD_THEME_DIR . '/assets/js/genesis-sample.js',
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true

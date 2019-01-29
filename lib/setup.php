@@ -32,9 +32,9 @@ function setup_child_theme() {
 
 	adds_new_image_sizes();
 
-	add_filter( 'genesis_load_deprecated', '__return_false' );
+	unregister_genesis_callbacks();
 
-	require_once CHILD_THEME_DIR . '/lib/admin/metaboxes.php';
+	add_filter( 'genesis_load_deprecated', '__return_false' );
 }
 
 /**
@@ -89,6 +89,17 @@ function adds_new_image_sizes() {
 	}
 
 	add_action( 'genesis_site_title', 'the_custom_logo', 0 );
+}
+
+/**
+ * Unregister Genesis callbacks.  We do this here because the child theme loads before Genesis.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function unregister_genesis_callbacks() {
+	unregister_menu_callbacks();
 }
 
 /**

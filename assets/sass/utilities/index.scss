@@ -20,7 +20,7 @@ $border-width: 1px;
 $border-style: solid;
 $border-color: $lighter-grey;
 $border-color__skip-links: #ccc;
-// $border-width $border-style $border-color
+$border__default: $border-width $border-style $border-color;
 
 // Box Shadow
 $box-shadow-blur-radius: 20px;
@@ -117,3 +117,4 @@ $archive-pagination--background-color: $lightest-grey;
 $archive-pagination--background-color-hover: $dark-grey;
 $enews__sidebar--background-color: $lightest-grey;
 $disabled--background-color: $lighter-grey;
+$blockquote__background-color: $mid-grey;
