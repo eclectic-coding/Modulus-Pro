@@ -4,8 +4,6 @@
  *
  * Removal from Customizer is happening in 'customizer/remove-adsense.php'
  *
- * Changes to the Layout.
- *
  * @package     PolishedWP\ModulusPro\Admin
  * @since       1.0.0
  * @author      Chuck Smith

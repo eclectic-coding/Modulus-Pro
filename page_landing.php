@@ -1,6 +1,5 @@
 <?php
 /**
- * Modulus.
  *
  * This file adds the landing page template to the Modulus Theme.
  *

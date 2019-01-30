@@ -2,7 +2,7 @@
 /**
  * This file makes changes to the Customizer.
  *
- * @package     PolishedWP\ModulusPro
+ * @package     PolishedWP\ModulusPro\Customizer
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com

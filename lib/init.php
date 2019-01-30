@@ -1,6 +1,6 @@
 <?php
 /**
- * Theme.
+ * Modulus Pro Theme.
  *
  * @package     PolishedWP\ModulusPro
  * @since       1.0.0

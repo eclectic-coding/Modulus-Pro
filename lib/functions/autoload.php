@@ -2,7 +2,7 @@
 /**
  * File autoloader
  *
- * @package     PolishedWP\ModulusPro
+ * @package     PolishedWP\ModulusPro\Functions
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
@@ -22,10 +22,10 @@ function load_nonadmin_files() {
 	$filenames = array(
 		'setup.php',
 		'functions/load-assets.php',
+		'functions/layout-settings.php',
 		'/admin/metaboxes.php',
 		//'functions/load-minified-css.php',
 		'admin/remove-adsense.php',
-//		'components/simple-social-icon-defaults.php',
 		'components/woocommerce/woocommerce-setup.php',
 		'components/woocommerce/woocommerce-output.php',
 		'components/woocommerce/woocommerce-notice.php',
@@ -56,9 +56,7 @@ function load_admin_files() {
 		'components/customizer/register-customizer.php',
 		'components/customizer/helper-functions.php',
 		'components/customizer/css-handler.php',
-		// 'components/customizer/customizer-settings-panel.php', --For Theme Settings Panel after release
 		'components/customizer/remove-adsense.php',
-
 	);
 
 	load_specified_files( $filenames );

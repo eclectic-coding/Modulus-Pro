@@ -1,8 +1,8 @@
 /**
- * Modulus-Pro entry point.
+ * Genesis Sample entry point.
  *
- * @package ModulusPro\JS
- * @author  PolishedWP
+ * @package GenesisSample\JS
+ * @author  StudioPress
  * @license GPL-2.0-or-later
  */
 
@@ -12,7 +12,7 @@ var genesisSample = ( function( $ ) {
 	/**
 	 * Adjust site inner margin top to compensate for sticky header height.
 	 *
-	 * @since 1.0.0
+	 * @since 2.6.0
 	 */
 	var moveContentBelowFixedHeader = function() {
 		var siteInnerMarginTop = 0;
@@ -25,11 +25,11 @@ var genesisSample = ( function( $ ) {
 	},
 
 	/**
-	 * Initialize Modulus-Pro.
+	 * Initialize Genesis Sample.
 	 *
 	 * Internal functions to execute on full page load.
 	 *
-	 * @since 1.0.0
+	 * @since 2.6.0
 	 */
 	load = function() {
 		moveContentBelowFixedHeader();

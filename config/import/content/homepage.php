@@ -1,17 +1,14 @@
 <?php
 /**
- * Modulus-Pro.
+ * Genesis Sample.
  *
  * Homepage content optionally installed after theme activation.
  *
- * @package     PolishedWP\ModulusPro\Onboarding
- * @since       1.0.0
- * @author      Chuck Smith
- * @link        http://www.polishedwp.com
- * @license     GNU General Public License 2.0+
+ * @package Genesis Sample
+ * @author  StudioPress
+ * @license GPL-2.0-or-later
+ * @link    https://www.studiopress.com/
  */
-
-namespace PolishedWP\ModulusPro\Onboarding;
 
 $genesis_homepage_header_image_url = CHILD_URL . '/config/import/images/mountain-bw.jpg';
 

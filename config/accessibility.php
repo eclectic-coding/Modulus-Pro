@@ -1,6 +1,6 @@
 <?php
 /**
- * Modulus-Pro child theme.
+ * Modulus Pro child theme.
  *
  * @package     PolishedWP\ModulusPro\Config
  * @since       1.0.0
@@ -10,6 +10,7 @@
  */
 
 namespace PolishedWP\ModulusPro\Config;
+
 
 /**
  * Genesis Accessibility features to support.

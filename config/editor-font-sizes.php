@@ -1,6 +1,6 @@
 <?php
 /**
- * Modulus-Pro child theme.
+ * Modulus Pro child theme.
  *
  * @package     PolishedWP\ModulusPro\Config
  * @since       1.0.0
@@ -16,22 +16,22 @@ namespace PolishedWP\ModulusPro\Config;
  */
 return array(
 	array(
-		'name'      => __( 'Small', CHILD_TEXT_DOMAIN ),
+		'name'      => __( 'Small', 'genesis-sample' ),
 		'size'      => 12,
 		'slug'      => 'small',
 	),
 	array(
-		'name'      => __( 'Normal', CHILD_TEXT_DOMAIN ),
+		'name'      => __( 'Normal', 'genesis-sample' ),
 		'size'      => 16,
 		'slug'      => 'normal',
 	),
 	array(
-		'name'      => __( 'Large', CHILD_TEXT_DOMAIN ),
+		'name'      => __( 'Large', 'genesis-sample' ),
 		'size'      => 20,
 		'slug'      => 'large',
 	),
 	array(
-		'name'      => __( 'Larger', CHILD_TEXT_DOMAIN ),
+		'name'      => __( 'Larger', 'genesis-sample' ),
 		'size'      => 24,
 		'slug'      => 'larger',
 	),

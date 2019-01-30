@@ -4,7 +4,7 @@
  *
  * This file adds the required WooCommerce setup functions.
  *
- * @package     PolishedWP\ModulusPro
+ * @package     PolishedWP\ModulusPro\Woocommerce
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
