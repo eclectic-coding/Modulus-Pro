@@ -1,0 +1,17 @@
+@mixin headersize {
+@for $i from 1 through 6 {
+  h#{$i} {
+    font-size: $header--base-font-size + $header--scaling * (6 - $i);
+    font-family: $base-font;
+    font-weight: $font-weight--regular;
+    line-height: $line-height--small;
+    margin: 0 0 20px;
+  }
+}
+}
+
+@mixin create-gallery($span, $total) {
+  .gallery-columns-#{$span} .gallery-item {
+    width: (($total/$span)*100%);
+  }
+}
