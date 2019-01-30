@@ -64,8 +64,7 @@ Gulp has been included (version 4). If you have Gulp 3 installed globally, pleas
 I want to specifically thank a few developers. 
 
 * [@srikat](https://github.com/srikat) - I have learned a lot from his tutorials and comments over the years and I appreciate inspiration. 
-*  
-[@christophherr](https://github.com/christophherr) - Thank you Christoph Herr for [Promethus 2](https://github.com/christophherr/prometheus). My first view of a modular child theme inspired me.
+* [@christophherr](https://github.com/christophherr) - Thank you Christoph Herr for [Promethus 2](https://github.com/christophherr/prometheus). My first view of a modular child theme inspired me.
 * [Tonya Mork](https://github.com/hellofromtonya) - I have learned so much on [KnowtheCodePro](http://knowthecode.io/) and I appreciate the inspiration and the lessons to think differently about code. 
 
 
