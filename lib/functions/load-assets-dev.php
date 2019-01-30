@@ -31,7 +31,7 @@ function enqueue_assets() {
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN . '-responsive-menu',
-		get_stylesheet_directory_uri() . "/assets/js/combined{$suffix}.js",
+		get_stylesheet_directory_uri() . "/assets/js/built/combined{$suffix}.js",
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
@@ -45,7 +45,7 @@ function enqueue_assets() {
 
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN,
-		get_stylesheet_directory_uri() . '/assets/js/combined.js',
+		get_stylesheet_directory_uri() . '/assets/js/built/combined.js',
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
