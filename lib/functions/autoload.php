@@ -22,13 +22,13 @@ function load_nonadmin_files() {
 	$filenames = array(
 		'setup.php',
 		'functions/load-assets.php',
+//		'functions/load-assets-dev.php', // For developer usign GULP ... using combined JS files
 		'/admin/metaboxes.php',
-		//'functions/load-minified-css.php',
+//		'functions/load-minified-css.php', // For developer using GULP ... min CSS by GULP
 		'admin/remove-adsense.php',
-//		'components/simple-social-icon-defaults.php',
-		'components/woocommerce/woocommerce-setup.php',
-		'components/woocommerce/woocommerce-output.php',
-		'components/woocommerce/woocommerce-notice.php',
+//		'components/woocommerce/woocommerce-setup.php',
+//		'components/woocommerce/woocommerce-output.php',
+//		'components/woocommerce/woocommerce-notice.php',
 //		'functions/formatting.php',
 //		'structure/archive.php',
 		'structure/authorbox.php',
@@ -56,7 +56,6 @@ function load_admin_files() {
 		'components/customizer/register-customizer.php',
 		'components/customizer/helper-functions.php',
 		'components/customizer/css-handler.php',
-		// 'components/customizer/customizer-settings-panel.php', --For Theme Settings Panel after release
 		'components/customizer/remove-adsense.php',
 
 	);
