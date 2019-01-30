@@ -46,47 +46,23 @@ function setup_child_theme() {
  */
 function adds_theme_supports() {
 	$config = array(
-		'html5'                           => array(
-			'caption',
-			'comment-form',
-			'comment-list',
-			'gallery',
-			'search-form'
-		),
-		'genesis-accessibility'           => array(
-			'404-page',
-			'drop-down-menu',
-			'headings',
-			'rems',
-			'search-form',
-			'skip-links'
-		),
 		'genesis-responsive-viewport'     => null,
 		'genesis-after-entry-widget-area' => null,
 		'genesis-footer-widgets'          => 3,
-		'custom-logo'   => array(
-			'height'      => 120,
-			'width'       => 700,
-			'flex-height' => true,
-			'flex-width'  => true,
-		),
-		'genesis-menus'     => array(
-			'primary'   => __( 'Primary Navigation Menu', 'genesis' ),
-			'secondary' => __( 'Secondary Navigation Menu', 'genesis' ),
-		),
 	);
 	foreach ( $config as $feature => $args ) {
 		add_theme_support( $feature, $args );
 	}
-<<<<<<< HEAD
-=======
 
-	// Adds support for HTML5 markup structure.
-	add_theme_support( 'html5', genesis_get_config( 'html5' ) );
-	add_theme_support( 'genesis-accessibility', genesis_get_config( 'accessibility' ) );
-	add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
-	add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
->>>>>>> Revert "Revised layout settings and file structure."
+	$newconfig = array(
+		'html5'                 => 'html5',
+		'genesis-accessibility' => 'accessibility',
+		'custom-logo'           => 'custom-logo',
+		'genesis-menus'         => 'menus',
+	);
+	foreach ( $newconfig as $feature => $args ) {
+		add_theme_support( $feature, genesis_get_config( $args ) );
+	}
 }
 
 /**

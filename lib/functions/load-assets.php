@@ -20,7 +20,7 @@ add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 function enqueue_assets() {
 
 	wp_enqueue_style(
-		CHILD_TEXT_DOMAIN,
+		CHILD_TEXT_DOMAIN . '-fonts',
 		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
 		array(),
 		CHILD_THEME_VERSION
@@ -31,7 +31,7 @@ function enqueue_assets() {
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN . '-responsive-menu',
-		CHILD_THEME_DIR . "/assets/js/responsive-menus{$suffix}.js",
+		get_stylesheet_directory_uri() . "/assets/js/responsive-menus{$suffix}.js",
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
@@ -45,7 +45,7 @@ function enqueue_assets() {
 
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN,
-		CHILD_THEME_DIR . '/assets/js/genesis-sample.js',
+		get_stylesheet_directory_uri() . '/assets/js/genesis-sample.js',
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
