@@ -2,25 +2,25 @@
 /**
  * Assets load handler.
  *
- * @package     PolishedWP\ModulusPro\Functions
+ * @package     PolishedWP\ModulusPro\
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
  * @license     GNU General Public License 2.0+
  */
 
-namespace PolishedWP\ModulusPro\Functions;
+namespace PolishedWP\ModulusPro;
 
-add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_scripts_styles' );
+add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 /**
  * Enqueues scripts and styles.
  *
  * @since 1.0.0
  */
-function enqueue_scripts_styles() {
+function enqueue_assets() {
 
 	wp_enqueue_style(
-		CHILD_TEXT_DOMAIN . '-fonts',
+		CHILD_TEXT_DOMAIN,
 		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
 		array(),
 		CHILD_THEME_VERSION
@@ -31,7 +31,7 @@ function enqueue_scripts_styles() {
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN . '-responsive-menu',
-		get_stylesheet_directory_uri() . "/assets/js/responsive-menus{$suffix}.js",
+		CHILD_THEME_DIR . "/assets/js/responsive-menus{$suffix}.js",
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
@@ -45,15 +45,7 @@ function enqueue_scripts_styles() {
 
 	wp_enqueue_script(
 		CHILD_TEXT_DOMAIN,
-		get_stylesheet_directory_uri() . '/assets/js/genesis-sample.js',
-		array( 'jquery' ),
-		CHILD_THEME_VERSION,
-		true
-	);
-
-	wp_enqueue_script(
-		CHILD_TEXT_DOMAIN,
-		get_stylesheet_directory_uri() . '/assets/js/genesis-sample.js',
+		CHILD_THEME_DIR . '/assets/js/genesis-sample.js',
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
@@ -64,14 +56,14 @@ function enqueue_scripts_styles() {
 /**
  * Defines responsive menu settings.
  *
- * @since 2.3.0
+ * @since 1.0.0
  */
 function responsive_menu_settings() {
 
 	$settings = array(
-		'mainMenu'         => __( 'Menu', 'genesis-sample' ),
+		'mainMenu'         => __( 'Menu', CHILD_TEXT_DOMAIN ),
 		'menuIconClass'    => 'dashicons-before dashicons-menu',
-		'subMenu'          => __( 'Submenu', 'genesis-sample' ),
+		'subMenu'          => __( 'Submenu', CHILD_TEXT_DOMAIN ),
 		'subMenuIconClass' => 'dashicons-before dashicons-arrow-down-alt2',
 		'menuClasses'      => array(
 			'combine' => array(

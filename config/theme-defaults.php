@@ -1,8 +1,8 @@
 <?php
 /**
- * Modulus Pro child theme..
+ * Modulus-Pro child theme..
  *
- * This file adds the default theme settings to the Modulus Pro Theme.
+ * This file adds the default theme settings to the Modulus-Pro Theme.
  *
  * @package     PolishedWP\ModulusPro\Config
  * @since       1.0.0

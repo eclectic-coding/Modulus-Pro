@@ -15,6 +15,7 @@ include_once( 'lib/init.php' );
 
 include_once( 'lib/functions/autoload.php' );
 
+<<<<<<< HEAD
 // Starts the engine.
 require_once get_template_directory() . '/lib/init.php';
 
@@ -42,6 +43,8 @@ add_theme_support( 'genesis-after-entry-widget-area' );
 // Adds support for 3-column footer widgets.
 add_theme_support( 'genesis-footer-widgets', 3 );
 
+=======
+>>>>>>> Revert "Revised layout settings and file structure."
 add_filter( 'site_transient_update_themes', __NAMESPACE__ . '\disable_theme_update_notification' );
 /**
  * Disable individual theme update notification WordPress

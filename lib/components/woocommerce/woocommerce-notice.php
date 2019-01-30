@@ -1,8 +1,8 @@
 <?php
 /**
- * Modulus Pro..
+ * Genesis Sample.
  *
- * This file adds the Genesis Connect for WooCommerce notice to the Modulus Pro Theme.
+ * This file adds the Genesis Connect for WooCommerce notice to the Genesis Sample Theme.
  *
  * @package     PolishedWP\ModulusPro\Woocommerce
  * @since       1.0.0

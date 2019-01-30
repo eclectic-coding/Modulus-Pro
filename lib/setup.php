@@ -24,9 +24,7 @@ add_action( 'genesis_setup', __NAMESPACE__ . '\setup_child_theme', 15 );
  */
 function setup_child_theme() {
 
-	load_child_theme_textdomain( 'CHILD_TEXT_DOMAIN', CHILD_THEME_DIR . '/assets/languages' );
-
-//	unregister_genesis_callbacks();
+	load_child_theme_textdomain( 'genesis-sample', get_stylesheet_directory() . '/assets/languages' );
 
 	load_gutenberg_support();
 
@@ -34,19 +32,10 @@ function setup_child_theme() {
 
 	adds_new_image_sizes();
 
+	unregister_genesis_callbacks();
+
 	add_filter( 'genesis_load_deprecated', '__return_false' );
 }
-
-/**
- * Unregister Genesis callbacks.  We do this here because the child theme loads before Genesis.
- *
- * @since 1.0.0
- *
- * @return void
- */
-//function unregister_genesis_callbacks() {
-//	unregister_menu_callbacks();
-//}
 
 /**
  * Adds theme supports to the site.
@@ -89,6 +78,15 @@ function adds_theme_supports() {
 	foreach ( $config as $feature => $args ) {
 		add_theme_support( $feature, $args );
 	}
+<<<<<<< HEAD
+=======
+
+	// Adds support for HTML5 markup structure.
+	add_theme_support( 'html5', genesis_get_config( 'html5' ) );
+	add_theme_support( 'genesis-accessibility', genesis_get_config( 'accessibility' ) );
+	add_theme_support( 'custom-logo', genesis_get_config( 'custom-logo' ) );
+	add_theme_support( 'genesis-menus', genesis_get_config( 'menus' ) );
+>>>>>>> Revert "Revised layout settings and file structure."
 }
 
 /**
@@ -119,6 +117,17 @@ function adds_new_image_sizes() {
 	}
 
 	add_action( 'genesis_site_title', 'the_custom_logo', 0 );
+}
+
+/**
+ * Unregister Genesis callbacks.  We do this here because the child theme loads before Genesis.
+ *
+ * @since 1.0.0
+ *
+ * @return void
+ */
+function unregister_genesis_callbacks() {
+	unregister_menu_callbacks();
 }
 
 /**

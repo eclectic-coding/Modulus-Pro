@@ -2,7 +2,7 @@
 /**
  * Load minified CSS
  *
- * @package     PolishedWP\ModulusPro\Functions
+ @package     	PolishedWP\ModulusPro
  * @since       1.0.0
  * @author      Chuck Smith
  * @link        http://www.polishedwp.com
