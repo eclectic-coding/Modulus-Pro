@@ -3,29 +3,21 @@
 
 .gallery {
   overflow: hidden;
-}
 
-.gallery img {
+  img {
   border: 1px solid #eee;
   height: auto;
   padding: 4px;
-}
+  }
 
-.gallery img:focus,
-.gallery img:hover {
+  img:focus,
+  img:hover {
   border: 1px solid #999;
   outline: none;
+  }
 }
 
-@include create-gallery(1, 1);
-@include create-gallery(2, 1);
-@include create-gallery(3, 1);
-@include create-gallery(4, 1);
-@include create-gallery(5, 1);
-@include create-gallery(6, 1);
-@include create-gallery(7, 1);
-@include create-gallery(8, 1);
-@include create-gallery(9, 1);
+@include create-gallery-items;
 
 .gallery-columns-2 .gallery-item:nth-child(2n+1),
 .gallery-columns-3 .gallery-item:nth-child(3n+1),

@@ -20,7 +20,7 @@ namespace PolishedWP\ModulusPro;
  */
 function init_constants() {
 
-$child_theme = wp_get_theme();
+	$child_theme = wp_get_theme();
 
 	define( 'CHILD_THEME_NAME', $child_theme->get( 'Name' ) );
 	define( 'CHILD_THEME_URL', $child_theme->get( 'ThemeURI' ) );

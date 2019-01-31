@@ -11,6 +11,8 @@ Template: genesis
 
 License: GPL-2.0+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
+GitHub Theme URI: polishedwp/Modulus-Pro
 Text Domain: modulus-pro
 *!/
 
@@ -841,11 +843,6 @@ th:first-child {
 .sidebar .widget-title a {
   color: #333;
   text-decoration: none;
-}
-
-.entry-title a:focus,
-.entry-title a:hover {
-  color: #0073e5;
 }
 
 .widget-title {

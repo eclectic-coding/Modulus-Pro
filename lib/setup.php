@@ -28,7 +28,7 @@ function setup_child_theme() {
 
 	load_gutenberg_support();
 
-//	adds_theme_supports();
+	adds_theme_supports();
 
 	adds_new_image_sizes();
 
@@ -109,9 +109,9 @@ function unregister_genesis_callbacks() {
 /**
  * Adds Gutenberg opt-in features and styling.
  *
- * @since 2.7.0
+ * @since 1.0.0
  */
-function load_gutenberg_support() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked.
+function load_gutenberg_support() { // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedFunctionFound -- using same in all child themes to allow action to be unhooked./** @noinspection PhpIncludeInspection */
 	require_once CHILD_THEME_DIR . '/lib/components/gutenberg/init.php';
 }
 

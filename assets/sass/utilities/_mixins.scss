@@ -10,8 +10,11 @@
 }
 }
 
-@mixin create-gallery($span, $total) {
-  .gallery-columns-#{$span} .gallery-item {
-    width: (($total/$span)*100%);
+@mixin create-gallery-items {
+@for $i from 1 through 9 {
+  .gallery-columns-#{$i} .gallery-item {
+    width: 1/$i *100%;
+  }
   }
 }
+

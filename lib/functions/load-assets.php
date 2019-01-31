@@ -1,4 +1,5 @@
-<?php
+<?php /** @noinspection ALL */
+
 /**
  * Assets load handler.
  *
@@ -23,7 +24,7 @@ function enqueue_assets() {
 		CHILD_TEXT_DOMAIN . '-fonts',
 		'//fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,700',
 		array(),
-		CHILD_THEME_VERSION 
+		CHILD_THEME_VERSION
 	);
 
 	wp_enqueue_style( 'dashicons' );

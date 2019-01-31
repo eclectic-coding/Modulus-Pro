@@ -23,7 +23,7 @@ function enqueue_gut_frontend_styles() {
 
 	wp_enqueue_style(
 		CHILD_TEXT_DOMAIN . '-gutenberg',
-		get_stylesheet_directory_uri() . '/lib/gutenberg/front-end.css',
+		get_stylesheet_directory_uri() . '/lib/components/gutenberg/front-end.css',
 		array( $child_theme_slug ),
 		CHILD_THEME_VERSION
 	);
