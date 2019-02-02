@@ -1,0 +1,7 @@
+{
+    "workbench.settings.editor": "json",
+	"phpcs.enable": true,
+	"phpcs.composerJsonPath": "./composer.json",
+	"phpcs.standard": "WordPress",
+	"editor.renderWhitespace": "all"
+  }
