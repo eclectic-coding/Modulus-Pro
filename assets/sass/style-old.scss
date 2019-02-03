@@ -75,20 +75,19 @@ Text Domain: modulus-pro
 - Print Styles
 */
 
-@import "partials/variables";
-@import "partials/mixins";
-@import "partials/html5-resets";
-@import "partials/defaults";
-@import "partials/structure";
-@import "partials/common-classes";
-@import "partials/widgets";
-@import "partials/plugins";
-@import "partials/skip-links";
-@import "partials/header";
-@import "partials/menu";
-@import "partials/content-area";
-@import "partials/sidebar";
-@import "partials/footer-widgets";
-@import "partials/site-footer";
-@import "partials/media-queries";
-@import "partials/print";
+@import "utilities/index";
+@import "resets/index";
+@import "defaults/index";
+@import "structure/index";
+@import "common-classes/index";
+@import "widgets/index";
+@import "plugins/index";
+@import "skip-links/index";
+@import "header/index";
+@import "menu/index";
+@import "content-area/index";
+@import "sidebar/index";
+@import "footer-widgets/index";
+//@import "site-footer/index";
+@import "media-queries/index";
+@import "print/index";

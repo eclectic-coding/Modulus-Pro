@@ -1,0 +1,142 @@
+// Base Colors -- base sample theme
+//$black: #000;
+//$dark-grey: #333;
+//$mid-grey: #777;
+//$medium-grey: #999;
+//$light-grey: #ddd;
+//$blue: #0073e5;
+//$lighter-grey: #eee;
+//$lightest-grey: #f5f5f5;
+//$white: #fff;
+
+// Modulus color palette
+$dark-green: #0c6b58;
+$mid-green: #147d64;
+$medium-green: #27ab83;
+$light-green: #65d6ad;
+$lighter-green: #8eedc7;
+$lightest-green: #c6f7e2;
+$dark-blue-grey: #102a43;
+$medium-blue-gray: #627D98;
+$black: #000;
+$dark-grey: #333;
+$mid-grey: #777;
+$medium-grey: #999;
+$light-grey: #ddd;
+$blue: #0073e5;
+$lighter-grey: #eee;
+$lightest-grey: #f5f5f5;
+$white: #fff;
+
+// Base Fonts
+$base-font: "Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+// Screen widths, Media queries - WC widths in WC variables
+$standard-screen-width: 960px;
+
+// Border styles
+$border-width: 1px;
+$border-style: solid;
+$border-color: $lighter-green;
+$border-color__skip-links: #ccc;
+$border__default: $border-width $border-style $border-color;
+
+// Box Shadow
+$box-shadow-blur-radius: 20px;
+$box-shadow-opacity: 0.05;
+
+// Font sizes
+$body--font-size: 18px;
+$h1--font-size: 30px;
+$h2--font-size: 27px;
+$h3--font-size: 24px;
+$h4--font-size: 20px;
+$h5--font-size: 18px;
+$h6--font-size: 16px;
+$header--base-font-size: 15px;
+$header--scaling: 3;
+$button--font-size: 16px;
+$archive-author-box__entry-title--font-size: 20px;
+$breadcrumb--font-size: 16px;
+$entry-title--font-size: 30px;
+$featured-content__entry-title--font-size: 16px;
+$enews-widget__input--font-size: 16px;
+$site-title--font-size: 27px;
+$genesis-nav-menu--font-size: 15px;
+$genesis-nav-menu__sub-menu__link--font-size: 14px;
+$sidebar--font-size: 16px;
+$entry-content__caption--font-size: 14px;
+$entry-meta--font-size: 16px;
+$comments--font-size: 18px;
+$footer-widgets--font-size: 18px;
+$site-footer--font-size: 15px;
+$forms--font-size: 18px;
+$widget-title--font-size: 18px;
+$archive-pagination--font-size: 16px;
+$blockquote__before--font-size: 30px;
+$after-entry__breadcrumb--font-size: 16px;
+$screen-reader__font-size: 16px;
+
+// Font families
+$body--font-family: $base-font;
+$headings--font-family: $base-font;
+
+// Font weights
+$font-weight--regular: 400;
+$font-weight--semibold: 600;
+$font-weight--bold: 700;
+
+// Line heights
+$line-height--big: 20px;
+$line-height--large: 1.75;
+$line-height--normal: 1.625;
+$line-height--medium: 1.5;
+$line-height--medium-small: 1.4;
+$line-height--small: 1.2;
+$line-height--smaller: 1;
+
+// Font colors
+$body--font-color: $dark-blue-grey;
+$link--font-color: $dark-green;
+$link--font-color-hover: $dark-green;
+$button--font-color: $white;
+$button--font-color-hover: $white;
+$entry-title__link--font-color: $mid-green;
+$entry-title__link--font-color-hover: $dark-green;
+$site-title__link--font-color: $dark-green;
+$genesis-nav-menu--font-color: $dark-green;
+$genesis-nav-menu--font-color-hover: $dark-blue-grey;
+$menu-toggle--font-color: $medium-blue-gray;
+$menu-toggle--font-color-hover: $blue;
+$sub-menu-toggle--font-color: $dark-green;
+$sub-menu-toggle--font-color-hover: $blue;
+$menu-highlight__link--font-color: $white;
+$sidebar__widget-title--font-color: $dark-grey;
+$forms--font-color: $dark-grey;
+$archive-pagination--font-color: $dark-grey;
+$archive-pagination--font-color-hover: $white;
+$gs-faq__question--font-color: $dark-grey;
+$gs-faq__question--font-color-hover: $blue;
+$disabled--font-color: $mid-grey;
+
+// Background colors
+$body--background-color: $white;
+$site-header--background-color: $white;
+$mark--background-color: $light-grey;
+$button--background-color: $dark-grey;
+$button--background-color-hover: $blue;
+$genesis-nav-menu__sub-menu__link--background-color: $lightest-green;
+$footer-widgets--background-color: $white;
+$site-footer--background-color: $white;
+$menu-highlight__link--background-color: $dark-grey;
+$menu-highlight__link--background-color-hover: $blue;
+$forms__background-color: $white;
+$sticky--background-color: $lightest-grey;
+$author-box--background-color: $lightest-grey;
+$code--background-color: $lightest-grey;
+$archive-pagination--background-color: $lightest-grey;
+$archive-pagination--background-color-hover: $dark-grey;
+$enews__sidebar--background-color: $lightest-grey;
+$disabled--background-color: $lighter-grey;
+$blockquote__background-color: $mid-grey;
+

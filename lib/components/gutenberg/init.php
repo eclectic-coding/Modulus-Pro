@@ -103,7 +103,7 @@ function set_gut_theme_supports() {
 }
 
 // Enqueue editor styles.
-add_editor_style( '/lib/gutenberg/style-editor.css' );
+add_editor_style( '/lib/components/gutenberg/style-editor.css' );
 
 
 add_theme_support( 'editor-font-sizes', genesis_get_config( 'editor-font-sizes' ));

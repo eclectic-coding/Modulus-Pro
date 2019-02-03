@@ -1,0 +1,177 @@
+/*
+** # Content Area (assets/sass/content-area/)
+======================================================= */
+
+/* ## Entry Content
+-------------------------------------------------*/
+
+.entry {
+  margin-bottom: 40px;
+}
+
+.entry-content {
+
+  ol,
+  ul {
+    margin-bottom: 30px;
+    padding-left: 40px;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+  ul > li {
+    list-style-type: disc;
+  }
+
+  ol ul > li,
+  ul ul > li {
+    list-style-type: circle;
+  }
+
+  ol ol,
+  ul ul {
+    margin-bottom: 0;
+  }
+
+  code {
+    background-color: $lightest-grey;
+  }
+}
+
+.content .sticky {
+  background-color: $lightest-grey;
+  padding: 30px;
+}
+
+/* ## Entry Meta
+-------------------------------------------------*/
+
+entry-meta {
+
+  p {
+    font-size: $entry-meta--font-size;
+    margin-bottom: 0;
+  }
+
+  .entry-header & {
+    margin-bottom: 20px;
+  }
+
+  .entry-footer & {
+    border-top: $border-style $border-style $lighter-grey;
+    padding-top: 20px;
+  }
+}
+
+.entry-categories,
+.entry-tags {
+  display: block;
+}
+
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px;
+}
+
+/* ## Pagination
+------------------------------------------------------*/
+
+.pagination {
+  clear: both;
+  margin: 60px 0;
+}
+
+.adjacent-entry-pagination {
+  margin-bottom: 0;
+}
+
+.archive-pagination {
+
+  li {
+    display: inline;
+  }
+
+  li a {
+    background-color: $lightest-grey;
+    color: $dark-grey;
+    cursor: pointer;
+    display: inline-block;
+    font-size: $archive-author-box__entry-title--font-size;
+    font-weight: $font-weight--semibold;
+    margin-bottom: 4px;
+    padding: 8px 12px;
+    text-decoration: none;
+  }
+
+  li a:focus,
+  li a:hover,
+  li.active a {
+    background-color: $dark-grey;
+    color: $white;
+  }
+}
+
+/* ## Entry Comments
+-----------------------------------------------*/
+
+.entry-comments {
+  margin-bottom: 40px;
+}
+
+.comment-list {
+
+  li {
+    padding: 40px 0 0 30px;
+  }
+
+  .depth-1 {
+    padding-left: 0;
+  }
+}
+
+.comment-respond {
+  margin-bottom: 40px;
+
+  input[type="email"],
+  input[type="text"],
+  input[type="url"] {
+    width: 50%;
+  }
+
+  label {
+    display: block;
+    margin-right: 12px;
+  }
+}
+
+.entry-pings {
+  margin-bottom: 40px;
+
+  .reply {
+    display: none;
+  }
+}
+
+
+.comment-header {
+  margin-bottom: 30px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.comment-content {
+  clear: both;
+
+  ul > li {
+    list-style-type: disc;
+  }
+}
+
+.comment-form-cookies-consent label {
+  display: inline;
+  padding-left: 10px;
+}

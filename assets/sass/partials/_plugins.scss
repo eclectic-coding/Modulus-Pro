@@ -1,0 +1,66 @@
+/* # Plugins
+=========================================================== */
+
+/* ## Genesis eNews Extended
+---------------------------------------------------- */
+
+.after-entry .enews {
+  text-align: center;
+  padding: 10px;
+}
+
+.sidebar .enews {
+  background-color: $enews__sidebar--background-color;
+  padding: 30px;
+}
+
+.enews-widget input {
+  font-size: $enews-widget__input--font-size;
+  margin-bottom: 10px;
+}
+
+.after-entry .enews-widget input {
+  text-align: center;
+}
+
+.enews-widget input[type="submit"] {
+  margin: 0;
+  width: 100%;
+}
+
+.enews form + p {
+  margin-top: 20px;
+}
+
+/* ## Genesis Simple FAQ
+---------------------------------------------------- */
+
+.gs-faq__question {
+  background: transparent;
+  border-bottom: $border__default;
+  color: $dark-grey;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gs-faq__question:focus,
+.gs-faq__question:hover {
+  background: transparent;
+  color: #0073e5;
+}
+
+.gs-faq__question::after {
+  content: "\f132";
+  font-family: dashicons; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+  float: right;
+}
+
+.gs-faq__question.gs-faq--expanded::after {
+  content: "\f460";
+}
+
+
+
+
+
+

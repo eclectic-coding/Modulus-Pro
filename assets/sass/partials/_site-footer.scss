@@ -1,0 +1,17 @@
+/*
+* # Site Footer
+========================================================= */
+
+.site-footer {
+  background-color: $site-footer--background-color;
+  border-top: $border__default;
+  font-size: $site-footer--font-size;
+  line-height: $line-height--medium;
+  padding: 30px;
+  text-align: center;
+}
+
+.site-footer p {
+  margin-bottom: 0;
+}
+
