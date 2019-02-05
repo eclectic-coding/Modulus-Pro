@@ -1,0 +1,39 @@
+/* ## Entry Content
+--------------------------------------------- */
+
+.entry-content {
+
+  ol,
+  ul {
+    margin-bottom: 30px;
+    padding-left: 40px;
+  }
+
+  ol > li {
+    list-style-type: decimal;
+  }
+
+  ul > li {
+    list-style-type: disc;
+  }
+
+  ol ul > li,
+  ul ul > li {
+    list-style-type: circle;
+  }
+
+  ol ol,
+  ul ul {
+    margin-bottom: 0;
+  }
+
+  code {
+    background-color: $lightest-grey;
+  }
+}
+
+.content .sticky {
+  padding: 30px;
+  background-color: $lightest-grey;
+}
+

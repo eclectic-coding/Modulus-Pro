@@ -1,0 +1,69 @@
+//
+// Base navigation styles
+//==========================
+
+.genesis-nav-menu {
+  clear: both;
+  width: 100%;
+  line-height: 1;
+
+  .menu-item {
+    display: block;
+    float: none;
+    position: relative;
+  }
+
+  a {
+    display: block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    outline-offset: -1px;
+    color: $dark-grey;
+    font-size: $genesis-nav-menu--font-size;
+    font-weight: $font-weight--regular;
+    text-decoration: none;
+  }
+
+  a:focus,
+  a:hover,
+  .current-menu-item > a,
+  .sub-menu .current-menu-item > a:focus,
+  .sub-menu .current-menu-item > a:hover {
+    color: $genesis-nav-menu--font-color-hover;
+    text-decoration: none;
+  }
+
+  .sub-menu,
+  .sub-menu a {
+    width: 100%;
+  }
+
+  .sub-menu {
+    display: none;
+    clear: both;
+    position: static;
+    z-index: 99;
+    left: -9999px;
+    margin: 0;
+    padding-left: 15px;
+    opacity: 1;
+  }
+
+  .sub-menu a {
+    position: relative;
+    background-color: $genesis-nav-menu__sub-menu__link--background-color;
+    font-size: $genesis-nav-menu__sub-menu__link--font-size;
+    word-wrap: break-word;
+  }
+
+  .menu-item:focus,
+  .menu-item:hover {
+    position: relative;
+  }
+
+  .menu-item:hover > .sub-menu {
+    display: block;
+    left: auto;
+    opacity: 1;
+  }
+}

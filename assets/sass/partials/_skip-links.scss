@@ -3,17 +3,17 @@
 
 .genesis-skip-link {
   margin: 0;
-}
 
-.genesis-skip-link .skip-link-hidden {
-  display: none;
-  visibility: hidden;
-}
+  .skip-link-hidden {
+    display: none;
+    visibility: hidden;
+  }
 
-.genesis-skip-link li {
-  height: 0;
-  list-style: none;
-  width: 0;
+  li {
+    height: 0;
+    list-style: none;
+    width: 0;
+  }
 }
 
 /* Display outline on focus */

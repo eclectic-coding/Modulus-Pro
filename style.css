@@ -21,7 +21,7 @@ Text Domain: modulus-pro
 	- Baseline Normalize
 	- Box Sizing
 	- Float Clearing
-- Defaults
+- Defaults ----------------------- (sass/base/common)
 	- Typographical Elements
 	- Headings
 	- Objects
@@ -37,7 +37,7 @@ Text Domain: modulus-pro
 	- Genesis
 	- Search Form
 	- Titles
-	- WordPress
+	- WordPress ------------- (sass/base/common)
 - Widgets
 	- Featured Content
 - Plugins
@@ -74,6 +74,7 @@ Text Domain: modulus-pro
 		- Footer Widgets
 - Print Styles
 */
+/* stylelint-disable */
 /* # HTML Reset
 ==================================================*/
 /* ## Baseline Normalize
@@ -288,7 +289,7 @@ html {
   display: table;
 }
 
-/* # Defaults 
+/* # Defaults
 ======================================================== */
 /* Typographical Elements
 ---------------------------------------*/
@@ -299,8 +300,8 @@ html {
 
 body {
   background-color: #fff;
-  color: #102a43;
-  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  color: #333;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.625;
@@ -379,7 +380,7 @@ blockquote {
 --------------------------------------------*/
 h1 {
   font-size: 30px;
-  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px;
@@ -387,7 +388,7 @@ h1 {
 
 h2 {
   font-size: 27px;
-  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px;
@@ -395,7 +396,7 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px;
@@ -403,7 +404,7 @@ h3 {
 
 h4 {
   font-size: 21px;
-  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px;
@@ -411,7 +412,7 @@ h4 {
 
 h5 {
   font-size: 18px;
-  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px;
@@ -419,14 +420,13 @@ h5 {
 
 h6 {
   font-size: 15px;
-  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400;
   line-height: 1.2;
   margin: 0 0 20px;
 }
 
-.entry-content h3,
-.entry-content h4 {
+.entry-content h3, .entry-content h4 {
   font-weight: 600;
 }
 
@@ -508,21 +508,21 @@ figure {
   width: 11.1111111111%;
 }
 
-.gallery-columns-2 .gallery-item:nth-child(2n+1),
-.gallery-columns-3 .gallery-item:nth-child(3n+1),
-.gallery-columns-4 .gallery-item:nth-child(4n+1),
-.gallery-columns-5 .gallery-item:nth-child(5n+1),
-.gallery-columns-6 .gallery-item:nth-child(6n+1),
-.gallery-columns-7 .gallery-item:nth-child(7n+1),
-.gallery-columns-8 .gallery-item:nth-child(8n+1),
-.gallery-columns-9 .gallery-item:nth-child(9n+1) {
-  clear: left;
-}
-
 .gallery-item {
   float: left;
   margin: 0 0 30px;
   text-align: center;
+}
+
+.gallery-columns-2 .gallery-item:nth-child(2n + 1),
+.gallery-columns-3 .gallery-item:nth-child(3n + 1),
+.gallery-columns-4 .gallery-item:nth-child(4n + 1),
+.gallery-columns-5 .gallery-item:nth-child(5n + 1),
+.gallery-columns-6 .gallery-item:nth-child(6n + 1),
+.gallery-columns-7 .gallery-item:nth-child(7n + 1),
+.gallery-columns-8 .gallery-item:nth-child(8n + 1),
+.gallery-columns-9 .gallery-item:nth-child(9n + 1) {
+  clear: left;
 }
 
 /* ## Forms
@@ -641,7 +641,7 @@ table {
 }
 
 tbody {
-  border-bottom: 1px solid #8eedc7;
+  border-bottom: 1px solid #eee;
 }
 
 td,
@@ -650,7 +650,7 @@ th {
 }
 
 td {
-  border-top: 1px solid #8eedc7;
+  border-top: 1px solid #eee;
   padding: 6px;
 }
 
@@ -664,7 +664,7 @@ th:first-child {
   padding-left: 0;
 }
 
-/* ## Accessibility 
+/* ## Accessibility
 --------------------------------------------- */
 /* ## Screen Reader Text
 --------------------------------------------- */
@@ -730,7 +730,7 @@ th:first-child {
   padding: 60px 30px 0;
 }
 
-/* # Common Classes 
+/* # Common Classes
 ================================================== */
 /* Avatar
 ----------------------------------------- */
@@ -756,8 +756,8 @@ th:first-child {
 ----------------------------------------------------- */
 .after-entry {
   margin-bottom: 40px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
   padding: 20px 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
 
 .after-entry .widget:last-of-type {
@@ -765,10 +765,10 @@ th:first-child {
 }
 
 .breadcrumb {
-  border-bottom: 1px solid #8eedc7;
-  font-size: 16px;
   margin-bottom: 40px;
   padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 16px;
 }
 
 .archive-description {
@@ -815,14 +815,6 @@ th:first-child {
 
 /* ## Titles
 -------------------------------------------------- */
-.archive-description .entry-title,
-.archive-title,
-.author-box-title {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
 .entry-title {
   font-size: 30px;
   margin-bottom: 10px;
@@ -838,15 +830,23 @@ th:first-child {
   color: #0073e5;
 }
 
-.sidebar .widget-title a {
-  color: #333;
-  text-decoration: none;
+.archive-description .entry-title,
+.archive-title,
+.author-box-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .widget-title {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 20px;
+}
+
+.sidebar .widget-title a {
+  color: #333;
+  text-decoration: none;
 }
 
 /* ## Wordpress
@@ -953,15 +953,15 @@ img.alignright,
   width: 100%;
 }
 
-.widget_calendar td,
-.widget_calendar th {
+.widget_calendar table td,
+.widget_calendar table th {
   text-align: center;
 }
 
 /* ## Featured Content
 ------------------------------------------------- */
 .featured-content .entry {
-  border-bottom: 1px solid #8eedc7;
+  border-bottom: 1px solid #eee;
   margin-bottom: 20px;
 }
 
@@ -990,6 +990,10 @@ img.alignright,
   padding: 30px;
 }
 
+.enews form + p {
+  margin-top: 20px;
+}
+
 .enews-widget input {
   font-size: 16px;
   margin-bottom: 10px;
@@ -1004,15 +1008,11 @@ img.alignright,
   width: 100%;
 }
 
-.enews form + p {
-  margin-top: 20px;
-}
-
 /* ## Genesis Simple FAQ
 ---------------------------------------------------- */
 .gs-faq__question {
   background: transparent;
-  border-bottom: 1px solid #8eedc7;
+  border-bottom: 1px solid #eee;
   color: #333;
   padding-left: 0;
   padding-right: 0;
@@ -1142,11 +1142,10 @@ img.alignright,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #102a43;
+  color: #0073e5;
   text-decoration: none;
 }
 
-.genesis-nav-menu .sub-menu,
 .genesis-nav-menu .sub-menu a {
   width: 100%;
 }
@@ -1163,7 +1162,7 @@ img.alignright,
 }
 
 .genesis-nav-menu .sub-menu a {
-  background-color: #c6f7e2;
+  background-color: #fff;
   font-size: 14px;
   position: relative;
   word-wrap: break-word;
@@ -1341,18 +1340,13 @@ img.alignright,
 
 /* ## Entry Meta
 -------------------------------------------------*/
-entry-meta p {
+.entry-meta p {
   font-size: 16px;
   margin-bottom: 0;
 }
 
-.entry-header entry-meta {
+.entry-header .entry-meta {
   margin-bottom: 20px;
-}
-
-.entry-footer entry-meta {
-  border-top: solid solid #eee;
-  padding-top: 20px;
 }
 
 .entry-categories,
@@ -1473,10 +1467,10 @@ entry-meta p {
 }
 
 /*
-* # Footer Widgets 
+* # Footer Widgets
 ========================================================= */
 .footer-widgets {
-  border-top: 1px solid #8eedc7;
+  border-top: 1px solid #eee;
   background-color: #fff;
   clear: both;
   padding: 60px 0;
@@ -1502,7 +1496,7 @@ entry-meta p {
 --------------------------------------------------*/
 .site-footer {
   background-color: #fff;
-  border-top: 1px solid #8eedc7;
+  border-top: 1px solid #eee;
   font-size: 15px;
   line-height: 1.5;
   padding: 30px;
@@ -1518,7 +1512,7 @@ entry-meta p {
 ========================================================= */
 .site-footer {
   background-color: #fff;
-  border-top: 1px solid #8eedc7;
+  border-top: 1px solid #eee;
   font-size: 15px;
   line-height: 1.5;
   padding: 30px;
@@ -1569,14 +1563,14 @@ entry-meta p {
     width: 180px;
   }
   .genesis-nav-menu .sub-menu {
-    border-top: 1px solid #8eedc7;
+    border-top: 1px solid #eee;
     opacity: 0;
     padding-left: 0;
     position: absolute;
     transition: opacity 0.4s ease-in-out;
   }
   .genesis-nav-menu .sub-menu a {
-    border: 1px solid #8eedc7;
+    border: 1px solid #eee;
     border-top: 0;
     padding-bottom: 15px;
     padding-top: 15px;
@@ -1757,14 +1751,14 @@ entry-meta p {
     width: 180px;
   }
   .genesis-nav-menu .sub-menu {
-    border-top: 1px solid #8eedc7;
+    border-top: 1px solid #eee;
     opacity: 0;
     padding-left: 0;
     position: absolute;
     transition: opacity 0.4s ease-in-out;
   }
   .genesis-nav-menu .sub-menu a {
-    border: 1px solid #8eedc7;
+    border: 1px solid #eee;
     border-top: 0;
     padding-bottom: 15px;
     padding-top: 15px;

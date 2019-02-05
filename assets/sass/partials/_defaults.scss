@@ -1,4 +1,4 @@
-/* # Defaults 
+/* # Defaults
 ======================================================== */
 
 /* Typographical Elements
@@ -90,10 +90,7 @@ blockquote {
 /* ## Headings
 --------------------------------------------*/
 
-@include headersize
-
-.entry-content h3,
-.entry-content h4 {
+@include headersize .entry-content h3, .entry-content h4 {
   font-weight: $font-weight--semibold;
 }
 
@@ -129,35 +126,35 @@ figure {
   overflow: hidden;
 
   img {
-  border: 1px solid #eee;
-  height: auto;
-  padding: 4px;
+    border: 1px solid #eee;
+    height: auto;
+    padding: 4px;
   }
 
   img:focus,
   img:hover {
-  border: 1px solid #999;
-  outline: none;
+    border: 1px solid #999;
+    outline: none;
   }
 }
 
 @include create-gallery-items;
 
-.gallery-columns-2 .gallery-item:nth-child(2n+1),
-.gallery-columns-3 .gallery-item:nth-child(3n+1),
-.gallery-columns-4 .gallery-item:nth-child(4n+1),
-.gallery-columns-5 .gallery-item:nth-child(5n+1),
-.gallery-columns-6 .gallery-item:nth-child(6n+1),
-.gallery-columns-7 .gallery-item:nth-child(7n+1),
-.gallery-columns-8 .gallery-item:nth-child(8n+1),
-.gallery-columns-9 .gallery-item:nth-child(9n+1) {
-  clear: left;
-}
-
 .gallery-item {
   float: left;
   margin: 0 0 30px;
   text-align: center;
+}
+
+.gallery-columns-2 .gallery-item:nth-child(2n + 1),
+.gallery-columns-3 .gallery-item:nth-child(3n + 1),
+.gallery-columns-4 .gallery-item:nth-child(4n + 1),
+.gallery-columns-5 .gallery-item:nth-child(5n + 1),
+.gallery-columns-6 .gallery-item:nth-child(6n + 1),
+.gallery-columns-7 .gallery-item:nth-child(7n + 1),
+.gallery-columns-8 .gallery-item:nth-child(8n + 1),
+.gallery-columns-9 .gallery-item:nth-child(9n + 1) {
+  clear: left;
 }
 
 /* ## Forms
@@ -301,7 +298,7 @@ th:first-child {
   padding-left: 0;
 }
 
-/* ## Accessibility 
+/* ## Accessibility
 --------------------------------------------- */
 
 /* ## Screen Reader Text

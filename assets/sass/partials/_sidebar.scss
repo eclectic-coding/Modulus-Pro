@@ -4,12 +4,12 @@
 .sidebar {
   font-size: $sidebar--font-size;
   line-height: $line-height--medium;
-}
 
-.sidebar .widget {
-  margin-bottom: 40px;
-}
+  .widget {
+    margin-bottom: 40px;
+  }
 
-.sidebar p {
-  margin-bottom: 20px;
+  p {
+    margin-bottom: 20px;
+  }
 }

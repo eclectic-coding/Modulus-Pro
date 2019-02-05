@@ -35,13 +35,13 @@
   font-weight: $font-weight--semibold;
   line-height: $line-height--smaller;
   margin-bottom: 0;
-}
 
-.site-title a,
-.site-title a:focus,
-.site-title a:hover {
-  color: $dark-grey;
-  text-decoration: none;
+  a,
+  a:focus,
+  a:hover {
+    color: $dark-grey;
+    text-decoration: none;
+  }
 }
 
 .site-description,

@@ -1,0 +1,24 @@
+.wp-custom-logo {
+
+  .title-area {
+    width: 100%;
+    max-width: 350px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .title-area img {
+    width: auto;
+  }
+}
+
+.site-description,
+.wp-custom-logo .site-title {
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  word-wrap: normal !important;
+}

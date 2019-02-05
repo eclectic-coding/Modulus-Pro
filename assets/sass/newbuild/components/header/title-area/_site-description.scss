@@ -1,0 +1,14 @@
+//
+// Site Description
+//========================
+
+.site-description,
+.wp-custom-logo .site-title {
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  word-wrap: normal !important;
+}

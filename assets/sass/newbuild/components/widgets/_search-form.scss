@@ -1,0 +1,26 @@
+/* ## Search Form
+--------------------------------------------- */
+
+.search-form {
+  overflow: hidden;
+
+  .entry-content & {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+}
+
+.post-password-form input[type="submit"],
+.search-form input[type="submit"] {
+  margin-top: 10px;
+}
+
+.widget_search input[type="submit"] {
+  clip: rect(0, 0, 0, 0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
