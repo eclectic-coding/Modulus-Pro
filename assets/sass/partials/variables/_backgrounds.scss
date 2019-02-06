@@ -1,0 +1,20 @@
+// Background colors
+$body--background-color: pwp-color('background', 'light');
+$site-header--background-color: $body--background-color;
+$mark--background-color: pwp-color('neutral', 'light');
+$button--background-color: pwp-color('primary', 'base');
+$button--background-color-hover: pwp-color('primary', 'light');
+$genesis-nav-menu__sub-menu__link--background-color: pwp-color('accent', 'base');
+$footer-widgets--background-color: $body--background-color;
+$site-footer--background-color: $body--background-color;
+$menu-highlight__link--background-color: pwp-color('accent', 'base');
+$menu-highlight__link--background-color-hover: pwp-color('accent', 'base');
+$forms__background-color: $body--background-color;
+$sticky--background-color: pwp-color('background', 'light');
+$author-box--background-color: pwp-color('background', 'light');
+$neutral-light--background-color: pwp-color('neutral', 'light');
+$archive-pagination--background-color: pwp-color('background', 'dark');
+$archive-pagination--background-color-hover: pwp-color('background', 'base');
+$enews__sidebar--background-color: $body--background-color;
+$disabled--background-color: pwp-color('neutral', 'light');
+$blockquote__background-color: pwp-color('neutral', 'light');

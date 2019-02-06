@@ -93,13 +93,13 @@
   margin-bottom: 10px;
 
   a {
-    color: $dark-grey;
+    color: $link--font-color;
     text-decoration: none;
   }
 
   a:focus,
   a:hover {
-    color: $blue;
+    color: $link--font-color;
   }
 }
 
@@ -117,7 +117,7 @@
   margin-bottom: 20px;
 
   .sidebar & a {
-    color: $dark-grey;
+    color: $link--font-color;
     text-decoration: none;
   }
 }

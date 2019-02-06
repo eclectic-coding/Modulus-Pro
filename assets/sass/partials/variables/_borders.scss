@@ -1,0 +1,15 @@
+
+// Screen widths, Media queries - WC widths in WC variables
+$standard-screen-width: 960px;
+
+// Border styles
+$border-width: 1px;
+$border-style: solid;
+$border-color: pwp-color('accent', 'light');
+$border-color__skip-links: #ccc;
+$border__default: $border-width $border-style $border-color;
+
+// Box Shadow
+$box-shadow-blur-radius: 20px;
+$box-shadow-opacity: 0.05;
+

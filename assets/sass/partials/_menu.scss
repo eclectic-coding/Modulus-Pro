@@ -13,7 +13,7 @@
   }
 
   a {
-    color: $dark-grey;
+    color: $link--font-color;
     display: block;
     font-size: $genesis-nav-menu--font-size;
     font-weight: $font-weight--regular;
@@ -96,7 +96,7 @@
 .sub-menu-toggle {
   background-color: transparent;
   border-width: 0;
-  color: $dark-grey;
+  color: $body--font-color;
   display: block;
   margin: 0 auto;
   overflow: hidden;
@@ -110,7 +110,7 @@
 .sub-menu-toggle:hover {
   background-color: transparent;
   border-width: 0;
-  color: $blue;
+  color: $link--font-color;
 }
 
 .menu-toggle {

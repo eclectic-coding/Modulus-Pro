@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #fff;
+  background-color: $body--background-color;
   color: $body--font-color;
   font-family: $base-font;
   font-size: $body--font-size;
@@ -32,14 +32,14 @@ textarea:focus,
 }
 
 a {
-  color: $blue;
+  color: $link--font-color;
   text-decoration: underline;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 a:focus,
 a:hover {
-  color: $dark-grey;
+  color: $link--font-color-hover;
   text-decoration: none;
 }
 

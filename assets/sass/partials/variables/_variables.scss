@@ -9,27 +9,9 @@ $lighter-grey: #eee;
 $lightest-grey: #f5f5f5;
 $white: #fff;
 
-// Modulus color palette
-//$dark-grey: #0c6b58;
-//$mid-green: #147d64;
-//$medium-green: #27ab83;
-//$light-green: #65d6ad;
-//$lighter-green: #8eedc7;
-//$lightest-green: #c6f7e2;
-//$dark-blue-grey: #102a43;
-//$medium-blue-gray: #627D98;
-//$black: #000;
-//$dark-grey: #333;
-//$mid-grey: #777;
-//$medium-grey: #999;
-//$light-grey: #ddd;
-//$blue: #0073e5;
-//$lighter-grey: #eee;
-//$lightest-grey: #f5f5f5;
-//$white: #fff;
-
 // Base Fonts
-$base-font: "Source Sans Pro", sans-serif; /* stylelint-disable */
+$base-font: Lato, sans-serif; /* stylelint-disable */
+$header--base-font: "Work Sans", sans-serif; /* stylelint-disable */
 
 // Screen widths, Media queries - WC widths in WC variables
 $standard-screen-width: 960px;
@@ -37,7 +19,7 @@ $standard-screen-width: 960px;
 // Border styles
 $border-width: 1px;
 $border-style: solid;
-$border-color: $lighter-grey;
+$border-color: pwp-color('accent', 'light');
 $border-color__skip-links: #ccc;
 $border__default: $border-width $border-style $border-color;
 
@@ -96,16 +78,17 @@ $line-height--small: 1.2;
 $line-height--smaller: 1;
 
 // Font colors
-$body--font-color: $dark-grey;
-$link--font-color: $blue;
-$link--font-color-hover: $dark-grey;
-$button--font-color: $white;
-$button--font-color-hover: $white;
-$entry-title__link--font-color: $dark-grey;
-$entry-title__link--font-color-hover: $dark-grey;
-$site-title__link--font-color: $dark-grey;
-$genesis-nav-menu--font-color: $dark-grey;
-$genesis-nav-menu--font-color-hover: $blue;
+$body--font-color: pwp-color('neutral', 'darker');
+$link--font-color: pwp-color('neutral', 'darker');
+$link--font-color-hover: pwp-color('accent', 'dark');
+$button--font-color: pwp-color('neutral', 'light');
+$button--font-color-hover: pwp-color('neutral', 'light');
+$entry-title__link--font-color: pwp-color('neutral', 'light');
+$entry-title__link--font-color-hover: pwp-color('neutral', 'base');
+$site-title__link--font-color: pwp-color('primary', 'base');
+$site-title__link--font-color-hover: pwp-color('primary', 'dark');
+$genesis-nav-menu--font-color: pwp-color('accent', 'base');
+$genesis-nav-menu--font-color-hover: pwp-color('accent', 'light');
 $menu-toggle--font-color: $dark-grey;
 $menu-toggle--font-color-hover: $blue;
 $sub-menu-toggle--font-color: $dark-grey;
@@ -115,28 +98,28 @@ $sidebar__widget-title--font-color: $dark-grey;
 $forms--font-color: $dark-grey;
 $archive-pagination--font-color: $dark-grey;
 $archive-pagination--font-color-hover: $white;
-$gs-faq__question--font-color: $dark-grey;
-$gs-faq__question--font-color-hover: $blue;
+$gs-faq__question--font-color: pwp-color('background', 'base');
+$gs-faq__question--font-color-hover: pwp-color('background', 'dark');
 $disabled--font-color: $mid-grey;
 
 // Background colors
-$body--background-color: $white;
-$site-header--background-color: $white;
-$mark--background-color: $light-grey;
-$button--background-color: $dark-grey;
-$button--background-color-hover: $blue;
-$genesis-nav-menu__sub-menu__link--background-color: $white;
-$footer-widgets--background-color: $white;
-$site-footer--background-color: $white;
-$menu-highlight__link--background-color: $dark-grey;
-$menu-highlight__link--background-color-hover: $blue;
-$forms__background-color: $white;
-$sticky--background-color: $lightest-grey;
-$author-box--background-color: $lightest-grey;
-$code--background-color: $lightest-grey;
-$archive-pagination--background-color: $lightest-grey;
-$archive-pagination--background-color-hover: $dark-grey;
-$enews__sidebar--background-color: $lightest-grey;
-$disabled--background-color: $lighter-grey;
-$blockquote__background-color: $mid-grey;
+$body--background-color: pwp-color('background', 'light');
+$site-header--background-color: $body--background-color;
+$mark--background-color: pwp-color('neutral', 'light');
+$button--background-color: pwp-color('primary', 'base');
+$button--background-color-hover: pwp-color('primary', 'light');
+$genesis-nav-menu__sub-menu__link--background-color: pwp-color('accent', 'base');
+$footer-widgets--background-color: $body--background-color;
+$site-footer--background-color: $body--background-color;
+$menu-highlight__link--background-color: pwp-color('accent', 'base');
+$menu-highlight__link--background-color-hover: pwp-color('accent', 'base');
+$forms__background-color: $body--background-color;
+$sticky--background-color: pwp-color('background', 'light');
+$author-box--background-color: pwp-color('background', 'light');
+$neutral-light--background-color: pwp-color('neutral', 'light');
+$archive-pagination--background-color: pwp-color('background', 'dark');
+$archive-pagination--background-color-hover: pwp-color('background', 'base');
+$enews__sidebar--background-color: $body--background-color;
+$disabled--background-color: pwp-color('neutral', 'light');
+$blockquote__background-color: pwp-color('neutral', 'light');
 

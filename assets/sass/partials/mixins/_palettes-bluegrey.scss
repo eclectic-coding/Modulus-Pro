@@ -1,0 +1,82 @@
+$pwp-color-key: 'base' !default;
+
+$pwp-colors: (
+        'primary': (
+                'base': #0E7C86,
+                'light': #2CB1BC,
+                'dark': #044E54
+        ),
+        'accent': (
+                'base': #38BEC9,
+                'light': #E0FCFF,
+                'dark': #38BEC9
+        ),
+  // Font colors
+        'neutral': (
+                'base': #627D98, // Blue Grey
+                'light': #BCCCDC,
+                'dark': #334E68,
+                'darker': #102A43
+        ),
+  // Element backgrounds -- buttons , etc.
+        'background': (
+                'base': #627D98,
+                'light': #ffffff,
+                'dark': #334E68,
+                'darker': #243B53
+        )
+);
+
+$pwp-opacity: (
+        'light': 0.8, // opacity used with lighter colors
+        'dark': 0.4, // opacity used with darker colors
+        'faint': 0.05,
+  // ... etc.
+);
+
+@function pwp-color(
+  $name: 'primary',
+  $variant: $pwp-color-key,
+  $opacity: 1
+) {
+  $color: null;
+
+  // Get the color spectrum
+  $color-spectrum: map-get($pwp-colors, $name);
+
+  // Get the color variant
+  @if $color-spectrum {
+    $color: map-get($color-spectrum, $variant);
+  }
+
+  // Get the alpha setting
+  $alpha: if(type-of($opacity) == 'number', $opacity, map-get($pwp-opacity, $opacity));
+
+  // Set the alpha of the color
+  @if $alpha {
+    $color: rgba($color, $alpha);
+  }
+
+  @return $color;
+}
+
+// Example usage
+//.pwp-button {
+//  background-color: pwp-color('primary');
+//
+//  &:hover {
+//    background-color: pwp-color('primary', 'light');
+//  }
+//
+//  &.secondary {
+//    background-color: pwp-color('secondary');
+//
+//    &:hover {
+//      background-color: pwp-color('secondary', 'dark');
+//    }
+//  }
+//
+//  &.transparent {
+//    background-color: pwp-color('primary', $opacity: 'light');
+//  }
+//}
