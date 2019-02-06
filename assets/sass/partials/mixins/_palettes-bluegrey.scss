@@ -1,44 +1,41 @@
-$pwp-color-key: 'base' !default;
+$pwp-color-key: "base" !default;
 
 $pwp-colors: (
-        'primary': (
-                'base': #0E7C86,
-                'light': #2CB1BC,
-                'dark': #044E54
-        ),
-        'accent': (
-                'base': #38BEC9,
-                'light': #E0FCFF,
-                'dark': #38BEC9
-        ),
+  "primary": (
+    "base": #0e7c86,
+    "light": #2cb1bc,
+    "dark": #044e54
+  ),
+  "accent": (
+    "base": #38bec9,
+    "light": #e0fcff,
+    "dark": #38bec9
+  ),
   // Font colors
-        'neutral': (
-                'base': #627D98, // Blue Grey
-                'light': #BCCCDC,
-                'dark': #334E68,
-                'darker': #102A43
-        ),
-  // Element backgrounds -- buttons , etc.
-        'background': (
-                'base': #627D98,
-                'light': #ffffff,
-                'dark': #334E68,
-                'darker': #243B53
-        )
+  "neutral": (
+      "base": #627d98,
+      "light": #bcccdc,
+      "dark": #334e68,
+      "darker": #102a43
+    ),
+  // Element backgrounds
+  "background": (
+      "base": #627d98,
+      "light": #ffffff,
+      "dark": #334e68,
+      "darker": #243b53
+    )
 );
 
 $pwp-opacity: (
-        'light': 0.8, // opacity used with lighter colors
-        'dark': 0.4, // opacity used with darker colors
-        'faint': 0.05,
-  // ... etc.
+  "light": 0.8,
+  // opacity used with lighter colors
+    "dark": 0.4,
+  // opacity used with darker colors
+    // ... etc.
 );
 
-@function pwp-color(
-  $name: 'primary',
-  $variant: $pwp-color-key,
-  $opacity: 1
-) {
+@function pwp-color($name: "primary", $variant: $pwp-color-key, $opacity: 1) {
   $color: null;
 
   // Get the color spectrum
@@ -50,7 +47,11 @@ $pwp-opacity: (
   }
 
   // Get the alpha setting
-  $alpha: if(type-of($opacity) == 'number', $opacity, map-get($pwp-opacity, $opacity));
+  $alpha: if(
+    type-of($opacity) == "number",
+    $opacity,
+    map-get($pwp-opacity, $opacity)
+  );
 
   // Set the alpha of the color
   @if $alpha {

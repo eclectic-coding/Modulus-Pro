@@ -17,11 +17,13 @@
   float: left;
   padding-bottom: 25px;
   padding-top: 25px;
+  padding-left: 90px;
+  //padding: 25px 0 90px;
 }
 
 .wp-custom-logo .title-area {
   max-width: 350px;
-  padding-bottom: 5px;
+  padding: 5px 0;
   padding-top: 5px;
   width: 100%;
 }
@@ -31,8 +33,8 @@
 }
 
 .site-title {
-  font-size: 20px;
-  font-weight: $font-weight--semibold;
+  font-size: 36px;
+  font-weight: $font-weight--bold;
   line-height: $line-height--smaller;
   margin-bottom: 0;
 

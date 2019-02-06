@@ -59,6 +59,7 @@
   .menu-item:focus,
   .menu-item:hover {
     position: relative;
+    background: $genesis-nav-menu__sub-menu__link--background-color;
   }
 
   .menu-item:hover > .sub-menu {
@@ -109,7 +110,7 @@
 .sub-menu-toggle:focus,
 .sub-menu-toggle:hover {
   background-color: transparent;
-  border-width: 0;
+  border-width: none;
   color: $link--font-color;
 }
 
