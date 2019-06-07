@@ -2,7 +2,7 @@
 
 ![Title](screenshot.png)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/polishedwp/Modulus-Pro/badge.svg?targetFile=package.json)](https://snyk.io/test/github/polishedwp/Modulus-Pro?targetFile=package.json) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/polishedwp/modulus-pro/issues) [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) 
+[![Known Vulnerabilities](https://snyk.io/test/github/polishedwp/Modulus-Pro/badge.svg?targetFile=package.json)](https://snyk.io/test/github/polishedwp/Modulus-Pro?targetFile=package.json) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/polishedwp/modulus-pro/issues) [![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html) [![Greenkeeper badge](https://badges.greenkeeper.io/polishedwp/Modulus-Pro.svg)](https://greenkeeper.io/) 
 
 Modular starter child theme with Sass partials for the Genesis Framework, originally based on the Genesis Sample Theme version 2.8, but updated as new revisions are available from Studiopress are available. The latest version of this theme requires the **Genesis Framework 2.8+** and PHP 7.1+ (preferrably 7.2 for [security](http://php.net/supported-versions.php)). 
 
