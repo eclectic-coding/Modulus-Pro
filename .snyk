@@ -6,3 +6,11 @@ patch:
   SNYK-JS-LODASH-450202:
     - postcss-sorting > lodash:
         patched: '2019-07-04T07:24:51.335Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-07-11T00:39:10.106Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-07-11T00:39:10.106Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-11T00:39:10.106Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-11T00:39:10.106Z'
