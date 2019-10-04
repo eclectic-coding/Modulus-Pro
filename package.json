@@ -71,7 +71,7 @@
   },
   "dependencies": {
     "postcss-sorting": "^5.0.0",
-    "snyk": "^1.192.6"
+    "snyk": "^1.230.5"
   },
   "snyk": true
 }
