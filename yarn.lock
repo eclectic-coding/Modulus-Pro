@@ -9,7 +9,7 @@
   dependencies:
     "@babel/highlight" "^7.0.0"
 
-"@babel/core@>=7.1.0", "@babel/core@^7.4.5":
+"@babel/core@7.4.5", "@babel/core@>=7.1.0":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.4.5.tgz#081f97e8ffca65a9b4b0fdc7e274e703f000c06a"
   integrity sha512-OvjIh6aqXtlsA8ujtGKfC7LYWksYSX8yQcM8Ay3LuvVeQ63lcOKgoZWVqcpFwkd29aYU9rVx7jxhfhiEDV9MZA==
@@ -531,7 +531,7 @@
     "@babel/helper-regex" "^7.4.4"
     regexpu-core "^4.5.4"
 
-"@babel/preset-env@^7.4.5":
+"@babel/preset-env@7.4.5":
   version "7.4.5"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.4.5.tgz#2fad7f62983d5af563b5f3139242755884998a58"
   integrity sha512-f2yNVXM+FsR5V8UwcFeIHzHWgnhXg3NpRmy0ADvALpnhB0SLbCvrCRr4BLOUYbQNLS+Z0Yer46x9dJXpXewI7w==
@@ -585,7 +585,7 @@
     js-levenshtein "^1.1.3"
     semver "^5.5.0"
 
-"@babel/register@^7.0.0":
+"@babel/register@7.4.4":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/register/-/register-7.4.4.tgz#370a68ba36f08f015a8b35d4864176c6b65d7a23"
   integrity sha512-sn51H88GRa00+ZoMqCVgOphmswG4b7mhf9VOB0LUBAieykq2GnRFerlN+JQkO/ntT7wz4jaHNSRPg9IdMPEUkA==
@@ -1388,7 +1388,7 @@ bcrypt-pbkdf@^1.0.0:
   dependencies:
     tweetnacl "^0.14.3"
 
-beepbeep@^1.2.2:
+beepbeep@1.2.2:
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/beepbeep/-/beepbeep-1.2.2.tgz#6d77b8a07f3b11fa4f388c62e70ae607a0923f89"
   integrity sha512-6Kz/q06tpY/rMlB+vmq1vFGkGwfSolJlbxR3QUZOFSlPSfYUpPMo43o25xu6ou1GaoTiXV8adlelhewilup0Ag==
@@ -1553,7 +1553,7 @@ browser-sync-ui@^2.26.4:
     socket.io-client "^2.0.4"
     stream-throttle "^0.1.3"
 
-browser-sync@^2.11.1:
+browser-sync@2.26.5:
   version "2.26.5"
   resolved "https://registry.yarnpkg.com/browser-sync/-/browser-sync-2.26.5.tgz#c11353ffd4694be88a34b9a5d2a5a0ba789587d0"
   integrity sha512-zVa6MmadAFgl5Uk53Yy5cw5tGTO7xSGAWK3Yx70GJ1t5jK+r6B4q3xq+1XbYfLt1SbeFg7WoNWneNhMT4B9jFw==
@@ -3040,7 +3040,7 @@ escope@^3.6.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-config-wordpress@^2.0.0:
+eslint-config-wordpress@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-wordpress/-/eslint-config-wordpress-2.0.0.tgz#5201206c6964d648315232edf6dfbd2e925e4cd6"
   integrity sha1-UgEgbGlk1kgxUjLt9t+9LpJeTNY=
@@ -3070,6 +3070,48 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
   integrity sha512-qzm/XxIbxm/FHyH341ZrbnMUpe+5Bocte9xkmFMzPMjRaZMcXww+MpBptFvtU+79L362nqiLhekCxCxDPaUMBQ==
+
+eslint@5.16.0:
+  version "5.16.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.16.0.tgz#a1e3ac1aae4a3fbd8296fcf8f7ab7314cbb6abea"
+  integrity sha512-S3Rz11i7c8AA5JPv7xAH+dOyq/Cu/VXHiHXBPOU1k/JAM5dXqQPt3qcrhpHSorXmrpu2g0gkIBVXAqCpzfoZIg==
+  dependencies:
+    "@babel/code-frame" "^7.0.0"
+    ajv "^6.9.1"
+    chalk "^2.1.0"
+    cross-spawn "^6.0.5"
+    debug "^4.0.1"
+    doctrine "^3.0.0"
+    eslint-scope "^4.0.3"
+    eslint-utils "^1.3.1"
+    eslint-visitor-keys "^1.0.0"
+    espree "^5.0.1"
+    esquery "^1.0.1"
+    esutils "^2.0.2"
+    file-entry-cache "^5.0.1"
+    functional-red-black-tree "^1.0.1"
+    glob "^7.1.2"
+    globals "^11.7.0"
+    ignore "^4.0.6"
+    import-fresh "^3.0.0"
+    imurmurhash "^0.1.4"
+    inquirer "^6.2.2"
+    js-yaml "^3.13.0"
+    json-stable-stringify-without-jsonify "^1.0.1"
+    levn "^0.3.0"
+    lodash "^4.17.11"
+    minimatch "^3.0.4"
+    mkdirp "^0.5.1"
+    natural-compare "^1.4.0"
+    optionator "^0.8.2"
+    path-is-inside "^1.0.2"
+    progress "^2.0.0"
+    regexpp "^2.0.1"
+    semver "^5.5.1"
+    strip-ansi "^4.0.0"
+    strip-json-comments "^2.0.1"
+    table "^5.2.3"
+    text-table "^0.2.0"
 
 eslint@^2.7.0:
   version "2.13.1"
@@ -3153,48 +3195,6 @@ eslint@^4.0.0:
     strip-json-comments "~2.0.1"
     table "4.0.2"
     text-table "~0.2.0"
-
-eslint@^5.5.0:
-  version "5.16.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-5.16.0.tgz#a1e3ac1aae4a3fbd8296fcf8f7ab7314cbb6abea"
-  integrity sha512-S3Rz11i7c8AA5JPv7xAH+dOyq/Cu/VXHiHXBPOU1k/JAM5dXqQPt3qcrhpHSorXmrpu2g0gkIBVXAqCpzfoZIg==
-  dependencies:
-    "@babel/code-frame" "^7.0.0"
-    ajv "^6.9.1"
-    chalk "^2.1.0"
-    cross-spawn "^6.0.5"
-    debug "^4.0.1"
-    doctrine "^3.0.0"
-    eslint-scope "^4.0.3"
-    eslint-utils "^1.3.1"
-    eslint-visitor-keys "^1.0.0"
-    espree "^5.0.1"
-    esquery "^1.0.1"
-    esutils "^2.0.2"
-    file-entry-cache "^5.0.1"
-    functional-red-black-tree "^1.0.1"
-    glob "^7.1.2"
-    globals "^11.7.0"
-    ignore "^4.0.6"
-    import-fresh "^3.0.0"
-    imurmurhash "^0.1.4"
-    inquirer "^6.2.2"
-    js-yaml "^3.13.0"
-    json-stable-stringify-without-jsonify "^1.0.1"
-    levn "^0.3.0"
-    lodash "^4.17.11"
-    minimatch "^3.0.4"
-    mkdirp "^0.5.1"
-    natural-compare "^1.4.0"
-    optionator "^0.8.2"
-    path-is-inside "^1.0.2"
-    progress "^2.0.0"
-    regexpp "^2.0.1"
-    semver "^5.5.1"
-    strip-ansi "^4.0.0"
-    strip-json-comments "^2.0.1"
-    table "^5.2.3"
-    text-table "^0.2.0"
 
 espree@^3.1.6, espree@^3.5.2, espree@^3.5.4:
   version "3.5.4"
@@ -4309,7 +4309,7 @@ growly@^1.3.0:
   resolved "https://registry.yarnpkg.com/growly/-/growly-1.3.0.tgz#f10748cbe76af964b7c96c93c6bcc28af120c081"
   integrity sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE=
 
-gulp-autoprefixer@^6.0.0:
+gulp-autoprefixer@6.1.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/gulp-autoprefixer/-/gulp-autoprefixer-6.1.0.tgz#5f7f78468fe99a589ce353fa5891b7bee16b8f1e"
   integrity sha512-Ti/BUFe+ekhbDJfspZIMiOsOvw51KhI9EncsDfK7NaxjqRm+v4xS9v99kPxEoiDavpWqQWvG8Y6xT1mMlB3aXA==
@@ -4321,7 +4321,7 @@ gulp-autoprefixer@^6.0.0:
     through2 "^3.0.1"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-babel@^8.0.0:
+gulp-babel@8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/gulp-babel/-/gulp-babel-8.0.0.tgz#e0da96f4f2ec4a88dd3a3030f476e38ab2126d87"
   integrity sha512-oomaIqDXxFkg7lbpBou/gnUkX51/Y/M2ZfSjL2hdqXTAlSWZcgZtd2o0cOH0r/eE8LWD0+Q/PsLsr2DKOoqToQ==
@@ -4331,7 +4331,7 @@ gulp-babel@^8.0.0:
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-cache@^1.0.2:
+gulp-cache@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/gulp-cache/-/gulp-cache-1.1.1.tgz#07c20471c05cceec46e77b7fb0633fb600206140"
   integrity sha512-DiOlq861J8z1vzk69EpYo3+dvZ4KAa4qHd1E4isyHJoXri1+jd3XatoRytTCyOQWhuVdwaMqhPjsbEChZMgXwQ==
@@ -4367,7 +4367,7 @@ gulp-cli@^2.2.0:
     v8flags "^3.0.1"
     yargs "^7.1.0"
 
-gulp-concat@^2.5.2:
+gulp-concat@2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/gulp-concat/-/gulp-concat-2.6.1.tgz#633d16c95d88504628ad02665663cee5a4793353"
   integrity sha1-Yz0WyV2IUEYorQJmVmPO5aR5M1M=
@@ -4376,7 +4376,7 @@ gulp-concat@^2.5.2:
     through2 "^2.0.0"
     vinyl "^2.0.0"
 
-gulp-filter@^6.0.0:
+gulp-filter@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/gulp-filter/-/gulp-filter-6.0.0.tgz#9d69a408f1a9f60534264fb14464841f1b1746c2"
   integrity sha512-veQFW93kf6jBdWdF/RxMEIlDK2mkjHyPftM381DID2C9ImTVngwYpyyThxm4/EpgcNOT37BLefzMOjEKbyYg0Q==
@@ -4385,7 +4385,7 @@ gulp-filter@^6.0.0:
     plugin-error "^1.0.1"
     streamfilter "^3.0.0"
 
-gulp-imagemin@^6.0.0:
+gulp-imagemin@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/gulp-imagemin/-/gulp-imagemin-6.0.0.tgz#5d95d72413fddf975ced9f347dfe61128f4fb7ba"
   integrity sha512-gLTncXROP0UVFE/GXSpfXcotRl0o+7W/Hjuoz9FaHwasdD6K18VTNJjuA8Ks/w3fNwxo6aWRJGYM22mqFoemvw==
@@ -4403,7 +4403,7 @@ gulp-imagemin@^6.0.0:
     imagemin-optipng "^6.0.0"
     imagemin-svgo "^7.0.0"
 
-gulp-line-ending-corrector@^1.0.1:
+gulp-line-ending-corrector@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/gulp-line-ending-corrector/-/gulp-line-ending-corrector-1.0.3.tgz#f8bbe7403b0b87e6e6bd1ef458f5c74740ea6c13"
   integrity sha512-l68bon1Bbni5S5boKqya3MiwDGn8f6XGV7fsmOokkS+etVk/LY+OhFm24xy0Jlo8Xf0Rx4LsDNhmdzUGIaw7Yg==
@@ -4413,7 +4413,7 @@ gulp-line-ending-corrector@^1.0.1:
     plugin-error "^1.0.1"
     through2 "^2.0.0"
 
-gulp-merge-media-queries@^0.2.1:
+gulp-merge-media-queries@0.2.1:
   version "0.2.1"
   resolved "https://registry.yarnpkg.com/gulp-merge-media-queries/-/gulp-merge-media-queries-0.2.1.tgz#836e5e10e578e98f9ae9823deebc5d9546217830"
   integrity sha1-g25eEOV46Y+a6YI97rxdlUYheDA=
@@ -4423,7 +4423,7 @@ gulp-merge-media-queries@^0.2.1:
     lodash.defaults "~2.4.1"
     through2 "~0.4.1"
 
-gulp-notify@^3.0.0:
+gulp-notify@3.2.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/gulp-notify/-/gulp-notify-3.2.0.tgz#2ae8225009df881eef59be5dd5a2f1337387764e"
   integrity sha512-qEocs1UVoDKKUjfsxJNMNwkRla0PbsyJwsqNNXpzYWsLQ29LhxRMY3wnTGZcc4hMHtalnvah/Dwlwb4NijH/0A==
@@ -4436,7 +4436,7 @@ gulp-notify@^3.0.0:
     plugin-error "^0.1.2"
     through2 "^2.0.3"
 
-gulp-plumber@^1.2.0:
+gulp-plumber@1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/gulp-plumber/-/gulp-plumber-1.2.1.tgz#d38700755a300b9d372318e4ffb5ff7ced0b2c84"
   integrity sha512-mctAi9msEAG7XzW5ytDVZ9PxWMzzi1pS2rBH7lA095DhMa6KEXjm+St0GOCc567pJKJ/oCvosVAZEpAey0q2eQ==
@@ -4446,7 +4446,7 @@ gulp-plumber@^1.2.0:
     plugin-error "^0.1.2"
     through2 "^2.0.3"
 
-gulp-remember@^1.0.1:
+gulp-remember@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/gulp-remember/-/gulp-remember-1.0.1.tgz#cc3aab2a04a623614375571ca464d13e87502bfe"
   integrity sha1-zDqrKgSmI2FDdVccpGTRPodQK/4=
@@ -4455,12 +4455,12 @@ gulp-remember@^1.0.1:
     plugin-error "^0.1.2"
     through2 "^0.5.0"
 
-gulp-rename@^1.2.0:
+gulp-rename@1.4.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.4.0.tgz#de1c718e7c4095ae861f7296ef4f3248648240bd"
   integrity sha512-swzbIGb/arEoFK89tPY58vg3Ok1bw+d35PfUNwWqdo7KM4jkmuGA78JiDNqR+JeZFaeeHnRg9N7aihX3YPmsyg==
 
-gulp-rtlcss@^1.2.0:
+gulp-rtlcss@1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/gulp-rtlcss/-/gulp-rtlcss-1.3.0.tgz#1f898ad155c63dd0cba601d16caf4dbf7cff3f86"
   integrity sha512-xh9vuxDc5+5C583jJwy/F6nd6wdtz8YnjderfwjDWr4UPq0fzK3w9Yv03SPkAJlUFUz6Y/7Sli7h54PbJZ2X+A==
@@ -4470,7 +4470,7 @@ gulp-rtlcss@^1.2.0:
     through2 "^2.0.3"
     vinyl-sourcemaps-apply "^0.2.1"
 
-gulp-sass@^4.0.1:
+gulp-sass@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/gulp-sass/-/gulp-sass-4.0.2.tgz#cfb1e3eff2bd9852431c7ce87f43880807d8d505"
   integrity sha512-q8psj4+aDrblJMMtRxihNBdovfzGrXJp1l4JU0Sz4b/Mhsi2DPrKFYCGDwjIWRENs04ELVHxdOJQ7Vs98OFohg==
@@ -4484,14 +4484,14 @@ gulp-sass@^4.0.1:
     through2 "^2.0.0"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-sort@^2.0.0:
+gulp-sort@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/gulp-sort/-/gulp-sort-2.0.0.tgz#c6762a2f1f0de0a3fc595a21599d3fac8dba1aca"
   integrity sha1-xnYqLx8N4KP8WVohWZ0/rI26Gso=
   dependencies:
     through2 "^2.0.1"
 
-gulp-sourcemaps@^2.6.2:
+gulp-sourcemaps@2.6.5:
   version "2.6.5"
   resolved "https://registry.yarnpkg.com/gulp-sourcemaps/-/gulp-sourcemaps-2.6.5.tgz#a3f002d87346d2c0f3aec36af7eb873f23de8ae6"
   integrity sha512-SYLBRzPTew8T5Suh2U8jCSDKY+4NARua4aqjj8HOysBh2tSgT9u4jc1FYirAdPx1akUxxDeK++fqw6Jg0LkQRg==
@@ -4508,7 +4508,7 @@ gulp-sourcemaps@^2.6.2:
     strip-bom-string "1.X"
     through2 "2.X"
 
-gulp-uglify@^3.0.0:
+gulp-uglify@3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/gulp-uglify/-/gulp-uglify-3.0.2.tgz#5f5b2e8337f879ca9dec971feb1b82a5a87850b0"
   integrity sha512-gk1dhB74AkV2kzqPMQBLA3jPoIAPd/nlNzP2XMDSG8XZrqnlCiDGAqC+rZOumzFvB5zOphlFh6yr3lgcAb/OOg==
@@ -4524,7 +4524,7 @@ gulp-uglify@^3.0.0:
     uglify-js "^3.0.5"
     vinyl-sourcemaps-apply "^0.2.0"
 
-gulp-uglifycss@^1.0.6:
+gulp-uglifycss@1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/gulp-uglifycss/-/gulp-uglifycss-1.1.0.tgz#95ba1ff6cbd046edfa1c074de477a9bea4410a1a"
   integrity sha512-O2VDBPdS16SO3BPSCsHDnsvdCx1B/WgH2qvJaUOD+r1d8v87UjeqEtfmqR2eJ171D0F4shw8/oW5ezA6pqVXEQ==
@@ -4548,7 +4548,7 @@ gulp-util@~2.2.14:
     through2 "^0.5.0"
     vinyl "^0.2.1"
 
-gulp-wp-pot@^2.0.7:
+gulp-wp-pot@2.3.5:
   version "2.3.5"
   resolved "https://registry.yarnpkg.com/gulp-wp-pot/-/gulp-wp-pot-2.3.5.tgz#e44639798bd2517c9dd0bea7f52d5f8a1ff51ce1"
   integrity sha512-lRZZkuEBrYTPj3j9iOWK3YdtcRH857gxMMLKoboVjtY8G5l7iOxsyza50rsA8XvmPQ8hlSuMNA0zd17oT/ybqQ==
@@ -4558,7 +4558,7 @@ gulp-wp-pot@^2.0.7:
     vinyl "^2.2.0"
     wp-pot "^1.7.1"
 
-gulp@^4.0.2:
+gulp@4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/gulp/-/gulp-4.0.2.tgz#543651070fd0f6ab0a0650c6a3e6ff5a7cb09caa"
   integrity sha512-dvEs27SCZt2ibF29xYgmnwwCYZxdxhQ/+LFWlbAW8y7jt68L/65402Lz3+CKy0Ov4rOs+NERmDq7YlZaDqUIfA==
@@ -7656,7 +7656,7 @@ postcss-selector-parser@^6.0.2:
     indexes-of "^1.0.1"
     uniq "^1.0.1"
 
-postcss-sorting@^5.0.0:
+postcss-sorting@5.0.0, postcss-sorting@^5.0.0:
   version "5.0.0"
   resolved "https://registry.yarnpkg.com/postcss-sorting/-/postcss-sorting-5.0.0.tgz#4e4ce0a554c17d78d4287f08f792db8992bf62b5"
   integrity sha512-m25mKLNq0fPAyZFElQ1hngRDFQDMlc+9ZwoWsL8oix6i1GsBzIxyke6sDeY9BXee7L86z4tex01fcH/9wTj3Jg==
@@ -7722,7 +7722,7 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier-eslint@^8.8.1:
+prettier-eslint@8.8.2:
   version "8.8.2"
   resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-8.8.2.tgz#fcb29a48ab4524e234680797fe70e9d136ccaf0b"
   integrity sha512-2UzApPuxi2yRoyMlXMazgR6UcH9DKJhNgCviIwY3ixZ9THWSSrUww5vkiZ3C48WvpFl1M1y/oU63deSy1puWEA==
@@ -7741,7 +7741,7 @@ prettier-eslint@^8.8.1:
     typescript-eslint-parser "^16.0.0"
     vue-eslint-parser "^2.0.2"
 
-prettier-stylelint@^0.4.2:
+prettier-stylelint@0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/prettier-stylelint/-/prettier-stylelint-0.4.2.tgz#62845e342f786218b008da69eef14f0a5c05bcfb"
   integrity sha512-CmatjDsW8xKMtWg/Tc6/W02wC59p50kkItrXmkgbhR4b2EKMU5Pm55x1WuCahkkZeZoNVReWRxA8VL/s69mkBg==
@@ -7761,7 +7761,7 @@ prettier-stylelint@^0.4.2:
     tempy "^0.2.1"
     update-notifier "^2.2.0"
 
-prettier@^1.17.1, prettier@^1.7.0:
+prettier@1.17.1, prettier@^1.7.0:
   version "1.17.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.17.1.tgz#ed64b4e93e370cb8a25b9ef7fef3e4fd1c0995db"
   integrity sha512-TzGRNvuUSmPgwivDqkZ9tM/qTGW9hqDKWOE9YHiyQdixlKbv7kvEqsmDPrcHJTKwthU774TQwZXVtaQ/mMsvjg==
@@ -8580,7 +8580,7 @@ sass-graph@^2.2.4:
     scss-tokenizer "^0.2.3"
     yargs "^7.0.0"
 
-sass-lint@^1.12.1:
+sass-lint@1.13.1:
   version "1.13.1"
   resolved "https://registry.yarnpkg.com/sass-lint/-/sass-lint-1.13.1.tgz#5fd2b2792e9215272335eb0f0dc607f61e8acc8f"
   integrity sha512-DSyah8/MyjzW2BWYmQWekYEKir44BpLqrCFsgs9iaWiVTcwZfwXHF586hh3D1n+/9ihUNMfd8iHAyb9KkGgs7Q==
@@ -9048,7 +9048,7 @@ snyk-try-require@1.3.1, snyk-try-require@^1.1.1, snyk-try-require@^1.3.1:
     lru-cache "^4.0.0"
     then-fs "^2.0.0"
 
-snyk@^1.192.6:
+snyk@1.192.6:
   version "1.192.6"
   resolved "https://registry.yarnpkg.com/snyk/-/snyk-1.192.6.tgz#f4bfd290d390f1c6ddc9d6d4a9ff7b1193a40d82"
   integrity sha512-HM/oDrQX+3s2liAP2SJ0WNEiAciIs/keyBFbzo686YK0ecX8uICMbzV1vAup+9wDw6vQd9m/AaMI+Ehr4lZInA==
@@ -9562,12 +9562,12 @@ stylelint-config-recommended-scss@^3.2.0:
   dependencies:
     stylelint-config-recommended "^2.2.0"
 
-stylelint-config-recommended@^2.1.0, stylelint-config-recommended@^2.2.0:
+stylelint-config-recommended@2.2.0, stylelint-config-recommended@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-recommended/-/stylelint-config-recommended-2.2.0.tgz#46ab139db4a0e7151fd5f94af155512886c96d3f"
   integrity sha512-bZ+d4RiNEfmoR74KZtCKmsABdBJr4iXRiCso+6LtMJPw5rd/KnxUWTxht7TbafrTJK1YRjNgnN0iVZaJfc3xJA==
 
-stylelint-config-wordpress@^14.0.0:
+stylelint-config-wordpress@14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-config-wordpress/-/stylelint-config-wordpress-14.0.0.tgz#5cc05bf3f5f88026f8ba93eb854d7bf4e1c92e3e"
   integrity sha512-Qo5I9Qa3yOy2AF+DwL9wjdNSm10ykT4lM+JvnCMDT2VBOl+5yMgpbQ9Xaa0gQXeCdcHdLprtmkBbrvDqf6DWSg==
@@ -9576,7 +9576,7 @@ stylelint-config-wordpress@^14.0.0:
     stylelint-config-recommended-scss "^3.2.0"
     stylelint-scss "^3.6.0"
 
-stylelint-order@^3.0.0:
+stylelint-order@3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/stylelint-order/-/stylelint-order-3.0.0.tgz#ec44afb93a3183dcf8c91540d4486de776250506"
   integrity sha512-CaK3ebU5qSDY4aQZ5yA5uCL1jjAeK+TQeyKcH1w1O/wxC1GjM6JCv0msrA3Wno29F1jW/1UoWIsRFeo7hk9gtg==
@@ -9596,7 +9596,7 @@ stylelint-scss@^3.6.0:
     postcss-selector-parser "^6.0.2"
     postcss-value-parser "^3.3.1"
 
-stylelint@^10.0.1:
+stylelint@10.0.1:
   version "10.0.1"
   resolved "https://registry.yarnpkg.com/stylelint/-/stylelint-10.0.1.tgz#f85cd9755e905d826023d67df62b32716fa6dfb4"
   integrity sha512-NbpD9BvQRmPe7QfaLB2OqhhDr5g6SAn43AAH2XLyqtQ9ZcioQECgadkIbormfhzxLhccAQWBZbVNiZz1oqEf8g==
