@@ -74,7 +74,7 @@
     "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
-    "postcss-sorting": "5.0.0",
+    "postcss-sorting": "5.0.1",
     "snyk": "1.239.5"
   },
   "snyk": true
