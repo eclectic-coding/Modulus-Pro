@@ -44,7 +44,7 @@
     "prettier-eslint": "9.0.0",
     "prettier-stylelint": "0.4.2",
     "sass-lint": "1.13.1",
-    "stylelint": "10.0.1",
+    "stylelint": "10.1.0",
     "stylelint-config-recommended": "2.2.0",
     "stylelint-config-wordpress": "14.0.0",
     "stylelint-order": "3.1.1"
