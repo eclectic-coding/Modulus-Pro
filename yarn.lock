@@ -4731,14 +4731,14 @@ gulp-rename@1.4.0:
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-1.4.0.tgz#de1c718e7c4095ae861f7296ef4f3248648240bd"
   integrity sha512-swzbIGb/arEoFK89tPY58vg3Ok1bw+d35PfUNwWqdo7KM4jkmuGA78JiDNqR+JeZFaeeHnRg9N7aihX3YPmsyg==
 
-gulp-rtlcss@1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/gulp-rtlcss/-/gulp-rtlcss-1.3.0.tgz#1f898ad155c63dd0cba601d16caf4dbf7cff3f86"
-  integrity sha512-xh9vuxDc5+5C583jJwy/F6nd6wdtz8YnjderfwjDWr4UPq0fzK3w9Yv03SPkAJlUFUz6Y/7Sli7h54PbJZ2X+A==
+gulp-rtlcss@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/gulp-rtlcss/-/gulp-rtlcss-1.4.0.tgz#a1e4caef39182af03778cb9c18add9d3ee5e1c97"
+  integrity sha512-66UmUSacTzdV3L0KcsdwzExEu1+dTfNlq3emUZGgHPLgUaCrsZUgZwjsgKjPwkYJUZOucLpjOxAkB37k+H80Kw==
   dependencies:
     plugin-error "^1.0.1"
     rtlcss "^2.4.0"
-    through2 "^2.0.3"
+    through2 "^2.0.5"
     vinyl-sourcemaps-apply "^0.2.1"
 
 gulp-sass@4.0.2:
@@ -10280,7 +10280,7 @@ through2-filter@^3.0.0:
     through2 "~2.0.0"
     xtend "~4.0.0"
 
-through2@2.X, through2@^2.0.0, through2@^2.0.1, through2@^2.0.3, through2@~2.0.0:
+through2@2.X, through2@^2.0.0, through2@^2.0.1, through2@^2.0.3, through2@^2.0.5, through2@~2.0.0:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/through2/-/through2-2.0.5.tgz#01c1e39eb31d07cb7d03a96a70823260b23132cd"
   integrity sha512-/mrRod8xqpA+IHSLyGCQ2s8SPHiCDEeQJSep1jqLYeEUClOFG2Qsh+4FU6G9VeqpZnGW/Su8LQGc4YKni5rYSQ==
