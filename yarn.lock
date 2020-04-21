@@ -4714,15 +4714,15 @@ gulp-util@~2.2.14:
     through2 "^0.5.0"
     vinyl "^0.2.1"
 
-gulp-wp-pot@2.4.1:
-  version "2.4.1"
-  resolved "https://registry.yarnpkg.com/gulp-wp-pot/-/gulp-wp-pot-2.4.1.tgz#3b3d63e657332eb15e1793e927354055acaa478d"
-  integrity sha512-/sYqx9QQ1+A40XCS6yLTIrJuptQI3cCKd2z3AGhH/aox21u0M1EV/D8Nhzcdcyd84fsE9AkIGRiIyWx+IbZ9iw==
+gulp-wp-pot@2.4.2:
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/gulp-wp-pot/-/gulp-wp-pot-2.4.2.tgz#b20d278fafce815732192d683c1a385cd380d290"
+  integrity sha512-LjVT0wDSFu0bD+IjZF57BDoysQbyHj/3tDyLzN52+kH6TIG3Hf+CIYBxIeGdfUaJ0gnEVAHZYMDXJTtsVOjpsg==
   dependencies:
     plugin-error "^1.0.1"
     through2 "^3.0.1"
     vinyl "^2.2.0"
-    wp-pot "^1.9.1"
+    wp-pot "^1.9.2"
 
 gulp@4.0.2:
   version "4.0.2"
@@ -10478,10 +10478,10 @@ word-wrap@~1.2.3:
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
 
-wp-pot@^1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/wp-pot/-/wp-pot-1.9.1.tgz#60a37d0f808cc4f0aa96834180b5638d005074a4"
-  integrity sha512-wnD2gP7tB2uiz49ebje8EKStYweq/ueMKDm6My1BlUSjRBzdV4hIiIOA/J9M/O6naqp8yfksxi/RbpMU3upJvw==
+wp-pot@^1.9.2:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/wp-pot/-/wp-pot-1.9.2.tgz#24fc33031a4b49eff491b406303996c10b345312"
+  integrity sha512-B4lKZfgo8mDrNDGm9fRXChzc3t/Isqm7Yu9QrdXzZw9JzS9Pqqf40DRpSQcwaGuGI6aIVt6om8LX207xw8VRng==
   dependencies:
     matched "^5.0.0"
     path-sort "^0.1.0"
