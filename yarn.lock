@@ -5380,14 +5380,15 @@ gulp-concat@2.6.1:
     through2 "^2.0.0"
     vinyl "^2.0.0"
 
-gulp-filter@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/gulp-filter/-/gulp-filter-6.0.0.tgz#9d69a408f1a9f60534264fb14464841f1b1746c2"
-  integrity sha512-veQFW93kf6jBdWdF/RxMEIlDK2mkjHyPftM381DID2C9ImTVngwYpyyThxm4/EpgcNOT37BLefzMOjEKbyYg0Q==
+gulp-filter@7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/gulp-filter/-/gulp-filter-7.0.0.tgz#e0712f3e57b5d647f802a1880255cafb54abf158"
+  integrity sha512-ZGWtJo0j1mHfP77tVuhyqem4MRA5NfNRjoVe6VAkLGeQQ/QGo2VsFwp7zfPTGDsd1rwzBmoDHhxpE6f5B3Zuaw==
   dependencies:
-    multimatch "^4.0.0"
+    multimatch "^5.0.0"
     plugin-error "^1.0.1"
     streamfilter "^3.0.0"
+    to-absolute-glob "^2.0.2"
 
 gulp-imagemin@7.1.0:
   version "7.1.0"
@@ -7535,10 +7536,10 @@ ms@2.1.2, ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.2.tgz#d09d1f357b443f493382a8eb3ccd183872ae6009"
   integrity sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
 
-multimatch@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/multimatch/-/multimatch-4.0.0.tgz#8c3c0f6e3e8449ada0af3dd29efb491a375191b3"
-  integrity sha512-lDmx79y1z6i7RNx0ZGCPq1bzJ6ZoDDKbvh7jxr9SJcWLkShMzXrHbYVpTdnhNM5MXpDUxCQ4DgqVttVXlBgiBQ==
+multimatch@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/multimatch/-/multimatch-5.0.0.tgz#932b800963cea7a31a033328fa1e0c3a1874dbe6"
+  integrity sha512-ypMKuglUrZUD99Tk2bUQ+xNQj43lPEfAeX2o9cTteAmShXy2VHDJpuwu1o0xqoKCt9jLVAvwyFKdLTPXKAfJyA==
   dependencies:
     "@types/minimatch" "^3.0.3"
     array-differ "^3.0.0"
@@ -10730,7 +10731,7 @@ timers-ext@^0.1.5:
     es5-ext "~0.10.46"
     next-tick "1"
 
-to-absolute-glob@^2.0.0:
+to-absolute-glob@^2.0.0, to-absolute-glob@^2.0.2:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/to-absolute-glob/-/to-absolute-glob-2.0.2.tgz#1865f43d9e74b0822db9f145b78cff7d0f7c849b"
   integrity sha1-GGX0PZ50sIItufFFt4z/fQ98hJs=
