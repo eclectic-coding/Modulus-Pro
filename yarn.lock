@@ -5518,10 +5518,10 @@ gulp-rename@2.0.0:
   resolved "https://registry.yarnpkg.com/gulp-rename/-/gulp-rename-2.0.0.tgz#9bbc3962b0c0f52fc67cd5eaff6c223ec5b9cf6c"
   integrity sha512-97Vba4KBzbYmR5VBs9mWmK+HwIf5mj+/zioxfZhOKeXtx5ZjBk57KFlePf5nxq9QsTtFl0ejnHE3zTC9MHXqyQ==
 
-gulp-rtlcss@1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/gulp-rtlcss/-/gulp-rtlcss-1.4.1.tgz#c772dd1e4c8b16b7238c846e52371e3defb5e0ef"
-  integrity sha512-xXqTnmNbcjA6K9ogR36i2SaN8E5CWTCtRQGSY2k0W3cOISGnNkBTAt0GNThlq9iJT0ttR759kopDGn5PZTH4kg==
+gulp-rtlcss@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.yarnpkg.com/gulp-rtlcss/-/gulp-rtlcss-1.4.2.tgz#f1c0b8ad579b1ca15e861126e9fd0d703b32ef0a"
+  integrity sha512-wd807z/xq4XKtSwgrEetbx/aPoI5gV0yWV2rNqEBRwe2cJvNKLDsYR9A968c3gZtaKRMGAue5g3pHn40R+GWSA==
   dependencies:
     plugin-error "^1.0.1"
     rtlcss "^2.4.0"
