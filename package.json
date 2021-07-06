@@ -68,6 +68,6 @@
     "translate": "gulp translate"
   },
   "dependencies": {
-    "postcss-sorting": "5.0.1"
+    "postcss-sorting": "6.0.0"
   }
 }
