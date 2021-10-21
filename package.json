@@ -43,7 +43,7 @@
     "stylelint": "14.0.0",
     "stylelint-config-recommended": "6.0.0",
     "stylelint-config-wordpress": "17.0.0",
-    "stylelint-order": "4.1.0"
+    "stylelint-order": "5.0.0"
   },
   "browserslist": [
     "> 1%",
