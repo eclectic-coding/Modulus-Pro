@@ -37,7 +37,7 @@
     "gulp-uglifycss": "1.1.0",
     "gulp-wp-pot": "2.5.0",
     "prettier": "2.6.2",
-    "prettier-eslint": "14.0.0",
+    "prettier-eslint": "14.0.1",
     "prettier-stylelint": "0.4.2",
     "sass-lint": "1.13.1",
     "stylelint": "14.7.1",
