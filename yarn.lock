@@ -8319,10 +8319,10 @@ preserve@^0.2.0:
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
   integrity sha1-gV7R9uvGWSb4ZbMQwHE7yzMVzks=
 
-prettier-eslint@14.1.0:
-  version "14.1.0"
-  resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-14.1.0.tgz#12e0e834efe5b2359f8bb523eeb9a32cb479c630"
-  integrity sha512-K0TRVaAUXtI5xz1ZaVZfvGMmunDNyIGXFkE845hVl6FzSxzRN9E03YmK3IiapcRFv3w4PyAL25LIPsy2sRz2tw==
+prettier-eslint@15.0.0:
+  version "15.0.0"
+  resolved "https://registry.yarnpkg.com/prettier-eslint/-/prettier-eslint-15.0.0.tgz#727c5f2f8f40dc745b08694f1a17eaf2ab68e9e7"
+  integrity sha512-VkzXkxg1YQrXfPDmD0ydfHZWA4vE2DcOz2ac4WPkCS0nLqevUrkg0aNrMGSeNtCH+BFdc2W+YQizCdHAChEJCw==
   dependencies:
     "@types/eslint" "^8.4.2"
     "@types/prettier" "^2.6.0"
